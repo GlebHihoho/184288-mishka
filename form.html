@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+        <img src="http://placehold.it/150x100" alt="logo" width="150" height="100">
+      </a>
+      <button class="page-header__main-menu-btn">
+        <img src="http://placehold.it/20x20" alt="main-menu-btn" width="30" height="30">
+      </button>
+    </header>
+
+    <div class="banner-form">
+      <h1 class="banner-form__header">Вязание на заказ</h1>
+    </div>
+
+    <div class="main-form">
+      <form class="main-form__form" action="#" method="post">
+        <fieldset class="main-form__field">
+
+          <legend class="main-form__description">
+            Мы будем рады воплотить в жизнь ваши пожелания!
+            Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+          </legend>
+
+          <fieldset class="main-form__field-type">
+            <legend class="main-form__type">Тип</legend>
+
+            <input id="accessory" class="main-form__radio" type="radio" value="accessory" name="type">
+            <label class="main-form__radio-label" for="accessory">Аксессуары для интерьера</label>
+
+            <input id="toys" class="main-form__radio" type="radio" value="toys" name="type">
+            <label class="main-form__radio-label" for="toys">Аксессуары для интерьера</label>
+          </fieldset>
+
+          <fieldset class="main-form__field-color">
+            <legend class="main-form__color">Цвет</legend>
+
+            <input id="white-checkbox" class="main-form__checkbox" type="checkbox" value="white" name="color" checked>
+            <label class="main-form__checkbox-label" for="white-checkbox">Белый</label>
+
+            <input id="grey-checkbox" class="main-form__checkbox" type="checkbox" value="grey" name="color" checked>
+            <label class="main-form__checkbox-label" for="grey-checkbox">Серый</label>
+
+            <input id="tiffany-checkbox" class="main-form__checkbox" type="checkbox" value="tiffany" name="color">
+            <label class="main-form__checkbox-label" for="tiffany-checkbox">"Тиффани"</label>
+
+            <input id="black-checkbox" class="main-form__checkbox" type="checkbox" value="black" name="color">
+            <label class="main-form__checkbox-label" for="black-checkbox">Чёрный</label>
+
+            <input id="pink-checkbox" class="main-form__checkbox" type="checkbox" value="pink" name="color">
+            <label class="main-form__checkbox-label" for="pink-checkbox">Розовый</label>
+
+            <input id="orange-checkbox" class="main-form__checkbox" type="checkbox" value="orange" name="color">
+            <label class="main-form__checkbox-label" for="orange-checkbox">Оранжевый</label>
+          </fieldset>
+
+          <fieldset class="main-form__field-full-name">
+            <legend class="main-form__full-name">ФИО</legend>
+
+            <label class="main-form__text-label" for="name-text">Имя:</label>
+            <input id="name-text" class="main-form__text" type="text" placeholder="Введите ваше имя" name="name" required>
+
+            <label class="main-form__text-label" for="surname-text">Фамилия:</label>
+            <input id="surname-text" class="main-form__text" type="text" placeholder="Укажите фамилию" name="surname" required>
+
+            <label class="main-form__text-label" for="patronymic-text">Отчество:</label>
+            <input id="patronymic-text" class="main-form__text" type="text" placeholder="Отчество, если желаете" name="ratronymic" required>
+          </fieldset>
+
+          <label for="tel" class="main-form__other-label">Тел</label>
+          <input id="tel" class="main-form__text  main-form__text--tel-img" type="text" placeholder="+7 XXX XX XX" name="tel" required>
+
+          <label for="email" class="main-form__other-label">Email</label>
+          <input id="email" class="main-form__text  main-form__text--email-img" type="email" placeholder="Ваш Email" name="email" required>
+
+          <label for="other-text" class="main-form__other-label">Доп</label>
+          <textarea id="other-text" class="main-form__other-text" placeholder="Опишите все ваши пожелания к заказу" name="other" cols="30" rows="10" required></textarea>
+
+          <p class="main-form__other-info">Все поля обязательны для заполнения</p>
+          <input class="main-form__submit-btn" type="submit" value="Отправить заказ">
+        </fieldset>
+      </form>
+    </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__social">
+        <a class="page-footer__social-btn" href="#">Инстаграм
+          <img src="http://placehold.it/20x20" alt="Инстаграм, картинка" width="20" height="20">
+        </a>
+        <a class="page-footer__social-btn" href="#">Фэйсбук
+          <img src="http://placehold.it/20x20" alt="Фэйсбук, картинка" width="20" height="20">
+        </a>
+        <a class="page-footer__social-btn" href="#">Твиттер
+          <img src="http://placehold.it/20x20" alt="Твиттер, картинка" width="20" height="20">
+        </a>
+      </div>
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright-text">Разработано</p>
+        <a class="page-footer__copyright-cite" href="#">
+          <img src="http://placehold.it/27x34" alt="Твиттер, картинка" width="27" height="34">
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
