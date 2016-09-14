@@ -6,17 +6,8 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="logo" width="150" height="100">
-      </a>
-      <button class="page-header__main-menu-btn">
-        <img src="http://placehold.it/20x20" alt="main-menu-btn" width="30" height="30">
-      </button>
-    </header>
-
-    <div class="banner-form">
-      <h1 class="banner-form__header">Вязание на заказ</h1>
+    <div class="banner">
+      <h1 class="banner__header">Вязание на заказ</h1>
     </div>
 
     <div class="main-form">
@@ -28,8 +19,8 @@
             Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </legend>
 
-          <fieldset class="main-form__field-type">
-            <legend class="main-form__type">Тип</legend>
+          <fieldset class="main-form__group">
+            <legend class="main-form__group-title">Тип</legend>
 
             <input id="accessory" class="main-form__radio" type="radio" value="accessory" name="type">
             <label class="main-form__radio-label" for="accessory">Аксессуары для интерьера</label>
@@ -38,8 +29,8 @@
             <label class="main-form__radio-label" for="toys">Аксессуары для интерьера</label>
           </fieldset>
 
-          <fieldset class="main-form__field-color">
-            <legend class="main-form__color">Цвет</legend>
+          <fieldset class="main-form__group">
+            <legend class="main-form__group-title">Цвет</legend>
 
             <input id="white-checkbox" class="main-form__checkbox" type="checkbox" value="white" name="color" checked>
             <label class="main-form__checkbox-label" for="white-checkbox">Белый</label>
@@ -60,8 +51,8 @@
             <label class="main-form__checkbox-label" for="orange-checkbox">Оранжевый</label>
           </fieldset>
 
-          <fieldset class="main-form__field-full-name">
-            <legend class="main-form__full-name">ФИО</legend>
+          <fieldset class="main-form__group">
+            <legend class="main-form__group-title">ФИО</legend>
 
             <label class="main-form__text-label" for="name-text">Имя:</label>
             <input id="name-text" class="main-form__text" type="text" placeholder="Введите ваше имя" name="name" required>
@@ -83,30 +74,10 @@
           <textarea id="other-text" class="main-form__other-text" placeholder="Опишите все ваши пожелания к заказу" name="other" cols="30" rows="10" required></textarea>
 
           <p class="main-form__other-info">Все поля обязательны для заполнения</p>
-          <input class="main-form__submit-btn" type="submit" value="Отправить заказ">
+          <button class="main-form__submit" type="submit">Отправить заказ</button>
         </fieldset>
       </form>
     </div>
-
-    <footer class="page-footer">
-      <div class="page-footer__social">
-        <a class="page-footer__social-btn" href="#">Инстаграм
-          <img src="http://placehold.it/20x20" alt="Инстаграм, картинка" width="20" height="20">
-        </a>
-        <a class="page-footer__social-btn" href="#">Фэйсбук
-          <img src="http://placehold.it/20x20" alt="Фэйсбук, картинка" width="20" height="20">
-        </a>
-        <a class="page-footer__social-btn" href="#">Твиттер
-          <img src="http://placehold.it/20x20" alt="Твиттер, картинка" width="20" height="20">
-        </a>
-      </div>
-      <div class="page-footer__copyright">
-        <p class="page-footer__copyright-text">Разработано</p>
-        <a class="page-footer__copyright-cite" href="#">
-          <img src="http://placehold.it/27x34" alt="Твиттер, картинка" width="27" height="34">
-        </a>
-      </div>
-    </footer>
 
   </body>
 </html>
