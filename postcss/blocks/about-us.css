@@ -1,0 +1,18 @@
+$about-us-width: 320px;
+
+.about-us {
+  width: $about-us-width;
+
+  border: 2px solid yellow;
+}
+
+.about-us__header {
+  margin-top: 35px;
+  margin-left: 30px;
+
+  color: black;
+  font-family: OpenSans;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
