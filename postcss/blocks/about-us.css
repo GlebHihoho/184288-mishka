@@ -3,6 +3,8 @@ $about-us-width: 320px;
 .about-us {
   width: $about-us-width;
 
+  padding-bottom: 60px;
+
   border: 2px solid yellow;
 }
 
@@ -15,4 +17,29 @@ $about-us-width: 320px;
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+}
+
+.about-us__list {
+  margin: 0px;
+  margin-left: 30px;
+  margin-right: 40px;
+  padding: 0px;
+
+  color: black;
+  font-family: OpenSans;
+  font-size: 17px;
+  font-weight: 700;
+
+  list-style: none;
+}
+
+.about-us__benefit {
+  margin-top: 85px;
+
+  border: 5px solid white;
+}
+
+.about-us__img {
+  float: left;
+  margin-top: -70px;
 }
