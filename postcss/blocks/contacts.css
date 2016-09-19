@@ -1,0 +1,91 @@
+$contacts-width: 320px;
+
+.contacts {
+  width: $contacts-width;
+
+  border: 2px solid green;
+  padding-bottom: 40px;
+
+  &__header {
+    margin: 0px;
+    margin-left: 30px;
+    margin-top: 45px;
+    margin-bottom: 42px;
+    padding: 0px;
+
+
+    color: black;
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  &__mail {
+    margin: 0px;
+    padding: 0px;
+
+    color: #444;
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__head {
+    display: inline-block;
+    margin: 0px;
+    margin-left: 30px;
+    padding: 0px;
+  }
+
+  &__content--cite {
+    border-bottom: 1px solid #62d1ba;
+
+    text-decoration: none;
+    color: #444;
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__content {
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    vertical-align: top;
+    display: inline-block;
+    color: #444;
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    font-style: normal;
+  }
+
+  &__map {
+    margin-bottom: 40px;
+  }
+
+  &__btn{
+    background-color: white;
+    border: 2px solid #444;
+
+    margin-left: 28px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+
+    color: #444;
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

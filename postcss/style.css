@@ -1,0 +1,31 @@
+/*  other blocks  */
+
+@import "blocks/header.css";
+@import "blocks/footer.css";
+
+@import "blocks/social.css";
+
+/*  index.html  */
+
+@import "blocks/main-menu.css";
+@import "blocks/banner.css";
+@import "blocks/product-categories.css";
+@import "blocks/top-week.css";
+@import "blocks/about-us.css";
+@import "blocks/reviews.css";
+@import "blocks/contacts.css";
+
+/*  catalog.html  */
+
+@import "blocks/banner-catalog.css";
+@import "blocks/card.css";
+@import "blocks/video.css";
+
+/*  form.html  */
+
+@import "blocks/banner-form.css";
+@import "blocks/form.css";
+
+/*  modal window  */
+
+@import "blocks/modal.css";

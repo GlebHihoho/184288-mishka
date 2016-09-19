@@ -1,0 +1,22 @@
+$banner-catalog-width: 320px;
+
+.banner-catalog {
+  width: calc($banner-catalog-width);
+
+  background-color: #f1f1f1;
+  border: 2px solid blue;
+
+  &__header {
+    display: block;
+    text-align: center;
+
+    margin-top: 75px;
+    margin-bottom: 75px;
+
+    color: black;
+    font-family: Verdana;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+}

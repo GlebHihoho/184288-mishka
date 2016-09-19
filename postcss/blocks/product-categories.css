@@ -1,0 +1,31 @@
+$categories-width: 320px;
+
+.product-categories {
+  width: $categories-width;
+
+  border: 2px solid black;
+}
+
+.product-categories__category {
+  display: inline-block;
+  width: calc($categories-width - 29px);
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 29px;
+
+  color: white;
+  font-family: OpenSans;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+
+  &--objects {
+    background-color: #63d1bb;
+  }
+
+  &--toy {
+    background-color: #56c3b2;
+  }
+}

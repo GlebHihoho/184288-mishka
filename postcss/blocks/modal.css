@@ -1,0 +1,95 @@
+$modal-width: 320px;
+
+.modal {
+  width: $modal-width;
+
+  text-align: center;
+
+  border: 2px solid green;
+
+  &__header {
+    padding: 0px;
+    padding-top: 37px;
+    padding-left: 87px;
+    padding-right: 87px;
+    padding-bottom: 25px;
+
+    margin: 0px;
+
+    color: black;
+    font-family: OpenSans;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &__group {
+    border: none;
+  }
+
+  &__group-header {
+    padding: 0px;
+    padding-bottom: 28px;
+
+    margin: 0px;
+
+    color: #444;
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__label {
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 82px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    margin: 0px;
+    margin-bottom: 30px;
+
+    background-color: white;
+    border: 2px solid #444;
+
+    color: #444;
+    font-family: OpenSans;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  &__label--active {
+    border-color: #63d1bb;
+  }
+
+  &__sibmit-btn {
+    background-color: #63d1bb;
+    border: none;
+
+    margin: 0px;
+    margin-bottom: 30px;
+
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    color: white;
+    font-family: OpenSans;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+}

@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="header">
-      <a class="header__logo">
-        <img class="header__logo-img" src="http://placehold.it/150x100" alt="logo" width="150" height="100">
+      <a class="header__logo" href="#">
+        <img class="header__logo-img" src="img/logo-mobile.svg" alt="logo" width="86" height="35">
       </a>
       <button class="header__main-menu-btn">
-        <img class="header__btn-img" src="http://placehold.it/20x20" alt="Кнопка меню, картинка" width="30" height="30">
+        <img class="header__btn-img" src="img/icon-menu-open.svg" alt="Кнопка меню, картинка" width="20" height="14">
       </button>
     </header>
 
@@ -57,31 +58,31 @@
         <dt class="top-week__options-prop">Высота:</dt>
         <dd class="top-week__options-value">15 см</dd>
       </dl>
-      <img class="top-week__img" src="http://placehold.it/200x200" alt="Товар недели, картинка" width="200" height="200">
+      <img class="top-week__img" src="img/triple-set-mobile@1x.jpg" alt="Товар недели, картинка" width="260" height="315">
       <p class="top-week__cost">Цена: 990 руб.</p>
       <a class="top-week__btn" href="#">Заказать</a>
     </div>
 
     <div class="about-us">
-      <h2 class="about-us__header">Коротко о нас</h2>
+      <h2 class="about-us__header">Коротко о нас:</h2>
       <ul class="about-us__list">
         <li class="about-us__benefit">Экологически чистые материалы
-          <img class="about-us__ecology-img" src="http://placehold.it/30x30" alt="Товар недели, картинка" width="30" height="30">
+          <img class="about-us__img  about-us__ecology-img" src="img/icon-feature-1.svg" alt="Материалы, картинка" width="33" height="38">
         </li>
         <li class="about-us__benefit">Скандинавский стиль по российской цене
-          <img class="about-us__nordic-style-img" src="http://placehold.it/30x30" alt="Товар недели, картинка" width="30" height="30">
+          <img class="about-us__img  about-us__nordic-style-img" src="img/icon-feature-3.svg" alt="Стиль, картинка" width="47" height="27">
         </li>
         <li class="about-us__benefit">Увеличивает лайки на фотографиях
-          <img class="about-us__like-img" src="http://placehold.it/30x30" alt="Товар недели, картинка" width="30" height="30">
+          <img class="about-us__img  about-us__like-img" src="img/icon-feature-5.svg" alt="Лайки, картинка" width="34" height="27">
         </li>
         <li class="about-us__benefit">Связано вручную с любовью и умилением
-          <img class="about-us__handmade-img" src="http://placehold.it/30x30" alt="Товар недели, картинка" width="30" height="30">
+          <img class="about-us__img  about-us__handmade-img" src="img/icon-feature-2.svg" alt="Ручная работа, картинка" width="30" height="30">
         </li>
         <li class="about-us__benefit">Поддержка отечественного производителя
-          <img class="about-us__native-img" src="http://placehold.it/30x30" alt="Товар недели, картинка" width="30" height="30">
+          <img class="about-us__img  about-us__native-img" src="img/icon-feature-4.svg" alt="Производитель, картинка" width="30" height="30">
         </li>
         <li class="about-us__benefit">Поставляется в подарочной упаковке
-          <img class="about-us__gift-img" src="http://placehold.it/30x30" alt="Товар недели, картинка" width="30" height="30">
+          <img class="about-us__img  about-us__gift-img" src="img/icon-feature-6.svg" alt="Упаковка, картинка" width="30" height="30">
         </li>
       </ul>
     </div>
@@ -96,8 +97,12 @@
       <a class="reviews__name" href="mailto:misssssiskras@mail.ru">Анастасия Красильникова</a>
       <p class="reviews__mail">@misssssiskras</p>
       <div class="reviews__switch">
-        <div class="reviews__switch-prev"></div>
-        <div class="reviews__switch-next"></div>
+        <div class="reviews__switch-prev">
+          <img class="reviews__switch-arrow" src="img/icon-left-arrow.svg" alt="Стрелка влево, картинка" width="51" height="26">
+        </div>
+        <div class="reviews__switch-next">
+          <img class="reviews__switch-arrow" src="img/icon-right-arrow.svg" alt="Стрелка вправо, картинка" width="51" height="26">
+        </div>
       </div>
       <a class="reviews__btn" href="#">Написать</a>
     </div>
@@ -118,7 +123,7 @@
         </address>
       </div>
       <div class="contacts__map">
-        <img src="http://placehold.it/320x457" alt="Карта, картинка" width="320" height="457">
+        <img src="img/map-mobile@1x.jpg" alt="Карта, картинка" width="320" height="457">
       </div>
       <a class="contacts__btn" href="#">Напишите нам</a>
     </div>
@@ -130,99 +135,101 @@
     </div>
 
     <div class="card">
-      <img class="card__img" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик, картинка" width="260" height="195">
-      <h2 class="card__name">Зайчик-попрыгайчик</h2>
-      <p class="card__description">Рост 30 см, вес 200 г</p>
-      <div class="card_cost">
-        <p class="card__number-cost">1 200 руб.</p>
-        <button class="card__buy-btn">
-          <img class="card__buy-btn-img" src="http://placehold.it/21x19" alt="Корзина, картинка" width="21" height="19">
-        </button>
+      <img class="card__img" src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик, картинка" width="260" height="195">
+      <div class="card__options">
+        <h2 class="card__name">Зайчик-попрыгайчик</h2>
+        <p class="card__description">Рост 30 см, вес 200 г</p>
+        <div class="card__cost">
+          <p class="card__number-cost">1 200 руб.</p>
+          <button class="card__buy-btn">
+            <img class="card__buy-btn-img" src="img/icon-cart.svg" alt="Корзина, картинка" width="21" height="19">
+          </button>
+        </div>
       </div>
     </div>
 
-    <div class="video-production">
-      <h2 class="video-production__header">Процесс производства</h2>
-      <div class="video-production__video"></div>
-      <p class="video-production__description">
+    <div class="video">
+      <h2 class="video__header">Процесс производства</h2>
+      <img class="video__video" src="img/video-mobile@1x.jpg" alt="Видео, картинка" width="260" height="150">
+      <p class="video__description">
         По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
       </p>
-      <a class="btn" href="#">Сделать заказ</a>
+      <a class="video__btn" href="#">Сделать заказ</a>
     </div>
 
     <!-- ------------  -->
 
     <!-- FORM PAGE  -->
 
-    <div class="banner">
-      <h1 class="banner__header">Вязание на заказ</h1>
+    <div class="banner-form">
+      <h1 class="banner-form__header">Вязание на заказ</h1>
     </div>
 
-    <div class="main-form">
-      <form class="main-form__form" action="#" method="post">
-        <fieldset class="main-form__field">
+    <div class="form">
+      <form class="form__form" action="#" method="post">
+        <fieldset class="form__field">
 
-          <legend class="main-form__description">
+          <legend class="form__description">
             Мы будем рады воплотить в жизнь ваши пожелания!
             Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </legend>
 
-          <fieldset class="main-form__group">
-            <legend class="main-form__group-title">Тип</legend>
+          <fieldset class="form__group">
+            <legend class="form__group-title">Тип</legend>
 
-            <input id="accessory" class="main-form__radio" type="radio" value="accessory" name="type">
-            <label class="main-form__radio-label" for="accessory">Аксессуары для интерьера</label>
+            <input id="accessory" class="form__radio" type="radio" value="accessory" name="type" checked>
+            <label class="form__radio-label" for="accessory">Аксессуары для интерьера</label>
 
-            <input id="toys" class="main-form__radio" type="radio" value="toys" name="type">
-            <label class="main-form__radio-label" for="toys">Аксессуары для интерьера</label>
+            <input id="toys" class="form__radio" type="radio" value="toys" name="type">
+            <label class="form__radio-label" for="toys">Детская игрушка</label>
           </fieldset>
 
-          <fieldset class="main-form__group">
-            <legend class="main-form__group-title">Цвет</legend>
+          <fieldset class="form__group">
+            <legend class="form__group-title">Цвет</legend>
 
-            <input id="white-checkbox" class="main-form__checkbox" type="checkbox" value="white" name="color" checked>
-            <label class="main-form__checkbox-label" for="white-checkbox">Белый</label>
+            <input id="white-checkbox" class="form__checkbox" type="checkbox" value="white" name="color" checked>
+            <label class="form__checkbox-label" for="white-checkbox">Белый</label>
 
-            <input id="grey-checkbox" class="main-form__checkbox" type="checkbox" value="grey" name="color" checked>
-            <label class="main-form__checkbox-label" for="grey-checkbox">Серый</label>
+            <input id="grey-checkbox" class="form__checkbox" type="checkbox" value="grey" name="color" checked>
+            <label class="form__checkbox-label" for="grey-checkbox">Серый</label>
 
-            <input id="tiffany-checkbox" class="main-form__checkbox" type="checkbox" value="tiffany" name="color">
-            <label class="main-form__checkbox-label" for="tiffany-checkbox">"Тиффани"</label>
+            <input id="tiffany-checkbox" class="form__checkbox" type="checkbox" value="tiffany" name="color">
+            <label class="form__checkbox-label" for="tiffany-checkbox">"Тиффани"</label>
 
-            <input id="black-checkbox" class="main-form__checkbox" type="checkbox" value="black" name="color">
-            <label class="main-form__checkbox-label" for="black-checkbox">Чёрный</label>
+            <input id="black-checkbox" class="form__checkbox" type="checkbox" value="black" name="color">
+            <label class="form__checkbox-label" for="black-checkbox">Чёрный</label>
 
-            <input id="pink-checkbox" class="main-form__checkbox" type="checkbox" value="pink" name="color">
-            <label class="main-form__checkbox-label" for="pink-checkbox">Розовый</label>
+            <input id="pink-checkbox" class="form__checkbox" type="checkbox" value="pink" name="color">
+            <label class="form__checkbox-label" for="pink-checkbox">Розовый</label>
 
-            <input id="orange-checkbox" class="main-form__checkbox" type="checkbox" value="orange" name="color">
-            <label class="main-form__checkbox-label" for="orange-checkbox">Оранжевый</label>
+            <input id="orange-checkbox" class="form__checkbox" type="checkbox" value="orange" name="color">
+            <label class="form__checkbox-label" for="orange-checkbox">Оранжевый</label>
           </fieldset>
 
-          <fieldset class="main-form__group">
-            <legend class="main-form__group-title">ФИО</legend>
+          <fieldset class="form__group">
+            <legend class="form__group-title">ФИО</legend>
 
-            <label class="main-form__text-label" for="name-text">Имя:</label>
-            <input id="name-text" class="main-form__text" type="text" placeholder="Введите ваше имя" name="name" required>
+            <label class="form__text-label" for="name-text">Имя:</label>
+            <input id="name-text" class="form__text" type="text" placeholder="Введите ваше имя" name="name" required>
 
-            <label class="main-form__text-label" for="surname-text">Фамилия:</label>
-            <input id="surname-text" class="main-form__text" type="text" placeholder="Укажите фамилию" name="surname" required>
+            <label class="form__text-label" for="surname-text">Фамилия:</label>
+            <input id="surname-text" class="form__text" type="text" placeholder="Укажите фамилию" name="surname" required>
 
-            <label class="main-form__text-label" for="patronymic-text">Отчество:</label>
-            <input id="patronymic-text" class="main-form__text" type="text" placeholder="Отчество, если желаете" name="ratronymic" required>
+            <label class="form__text-label" for="patronymic-text">Отчество:</label>
+            <input id="patronymic-text" class="form__text" type="text" placeholder="Отчество, если желаете" name="ratronymic" required>
           </fieldset>
 
-          <label for="tel" class="main-form__other-label">Тел</label>
-          <input id="tel" class="main-form__text  main-form__text--tel-img" type="text" placeholder="+7 XXX XX XX" name="tel" required>
+          <label for="tel" class="form__other-label">Тел</label>
+          <input id="tel" class="form__text  form__text--tel-img" type="text" placeholder="+7 XXX XX XX" name="tel" required>
 
-          <label for="email" class="main-form__other-label">Email</label>
-          <input id="email" class="main-form__text  main-form__text--email-img" type="email" placeholder="Ваш Email" name="email" required>
+          <label for="email" class="form__other-label">Email</label>
+          <input id="email" class="form__text  form__text--email-img" type="email" placeholder="Ваш Email" name="email" required>
 
-          <label for="other-text" class="main-form__other-label">Доп</label>
-          <textarea id="other-text" class="main-form__other-text" placeholder="Опишите все ваши пожелания к заказу" name="other" cols="30" rows="10" required></textarea>
+          <label for="other-text" class="form__other-label">Доп</label>
+          <textarea id="other-text" class="form__other-text" placeholder="Опишите все ваши пожелания к заказу" name="other" cols="30" rows="10" required></textarea>
 
-          <p class="main-form__other-info">Все поля обязательны для заполнения</p>
-          <button class="main-form__submit" type="submit">Отправить заказ</button>
+          <p class="form__other-info">Все поля обязательны для заполнения</p>
+          <button class="form__submit" type="submit">Отправить заказ</button>
         </fieldset>
       </form>
     </div>
@@ -230,21 +237,23 @@
     <!-- ---------  -->
 
     <footer class="footer">
-      <div class="social">
-        <a class="social__btn" href="#">Инстаграм
-          <img class="social__btn-img  social__btn-img--inst" src="http://placehold.it/20x20" alt="Инстаграм, картинка" width="20" height="20">
-        </a>
-        <a class="social__btn" href="#">Фэйсбук
-          <img class="social__btn-img  social__btn-img--fb" src="http://placehold.it/20x20" alt="Фэйсбук, картинка" width="20" height="20">
-        </a>
-        <a class="social__btn" href="#">Твиттер
-          <img class="social__btn-img  social__btn-img--tw" src="http://placehold.it/20x20" alt="Твиттер, картинка" width="20" height="20">
-        </a>
+      <div class="footer__social">
+        <div class="social">
+          <a class="social__btn" href="#">Инстаграм
+            <img class="social__btn-img  social__btn-img--inst" src="img/icon-insta.svg" alt="Инстаграм, картинка" width="22" height="21">
+          </a>
+          <a class="social__btn" href="#">Фэйсбук
+            <img class="social__btn-img  social__btn-img--fb" src="img/icon-fb.svg" alt="Фэйсбук, картинка" width="15" height="29">
+          </a>
+          <a class="social__btn" href="#">Твиттер
+            <img class="social__btn-img  social__btn-img--tw" src="img/icon-twitter.svg" alt="Твиттер, картинка" width="24" height="20">
+          </a>
+        </div>
       </div>
       <div class="footer__copyright">
         <p class="footer__copyright-text">Разработано</p>
         <a class="footer__copyright-cite" href="#">
-          <img src="http://placehold.it/27x34" alt="Твиттер, картинка" width="27" height="34">
+          <img class="footer__copyright-cite-logo" src="img/logo-htmlacademy.svg" alt="HTML Academy logo, картинка" width="27" height="34">
         </a>
       </div>
     </footer>
@@ -254,9 +263,12 @@
       <form class="modal__form" action="#" method="post">
         <fieldset class="modal__group">
           <legend class="modal__group-header">Выберите размер:</legend>
-          <input class="modal__radio" type="radio" value="s" name="size">
-          <input class="modal__radio" type="radio" value="m" name="size">
-          <input class="modal__radio" type="radio" value="l" name="size">
+          <input class="modal__radio" id="value-size-s" type="radio" value="s" name="size">
+          <label class="modal__label  modal__label--active" for="value-size-s">S</label>
+          <input class="modal__radio" id="value-size-m" type="radio" value="m" name="size">
+          <label class="modal__label" for="value-size-m">M</label>
+          <input class="modal__radio" id="value-size-l" type="radio" value="l" name="size">
+          <label class="modal__label" for="value-size-l">L</label>
           <input class="modal__sibmit-btn" type="submit" value="Добавить">
         </fieldset>
       </form>

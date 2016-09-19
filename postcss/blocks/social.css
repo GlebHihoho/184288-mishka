@@ -1,0 +1,17 @@
+$social-width: 320px;
+
+.social {
+  width: $social-width;
+
+  font-size: 0px;
+  line-height: 0px;
+
+  &__btn {
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 40px;
+  }
+}
