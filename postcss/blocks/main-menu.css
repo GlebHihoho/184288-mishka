@@ -1,9 +1,10 @@
-$width-main-menu: 320px;
-
 .main-menu {
-  width: $width-main-menu;
+  @mixin container;
 
-  border: 2px solid red;
+  position: absolute;
+  top: 80px;
+
+  background-color: $bg-white;
 }
 
 .main-menu__list {
@@ -13,18 +14,101 @@ $width-main-menu: 320px;
 }
 
 .main-menu__list-item {
-  padding-left: 76px;
-  padding-top: 32px;
+  display: block;
+  position: relative;
+
+  padding-left: 75px;
+  padding-top: 30px;
   padding-bottom: 30px;
 
-  box-shadow: inset 0 1px 0 #ececec, 0 1px 0 #ececec;
+  border-top: 1px solid $border-color;
 }
 
-.main-menu__link-item {
-  color: black;
-  font-family: OpenSans;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  text-decoration: none;
+.main-menu__img {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+@media (--tablet-widths) {
+
+  .main-menu {
+    background-color: inherit;
+  }
+
+  .main-menu__list-item {
+    display: inline-block;
+    vertical-align: top;
+
+    border-top: none;
+  }
+
+  .main-menu__list-item:nth-child(1) {
+    padding-left: 50px;
+  }
+
+  .main-menu__list-item:nth-child(2) {
+    padding-left: 40px;
+  }
+
+  .main-menu__list-item:nth-child(1),
+  .main-menu__list-item:nth-child(2) {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .main-menu__list-item:nth-child(3) .main-menu__link-item {
+    font-size: 0;
+  }
+
+  .main-menu__list-item:nth-child(3) {
+    padding: 0;
+    margin: 0;
+    margin-right: 300px;
+    width: 100px;
+    height: 90px;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+  }
+
+  .main-menu__list-item:nth-child(3) .main-menu__img{
+    top: 45%;
+    left: 40%;
+  }
+
+  .main-menu__list-item:nth-child(3),
+  .main-menu__list-item:nth-child(4) {
+    margin-top: -90px;
+    float: right;
+  }
+
+  .main-menu__list-item:nth-child(4) {
+    font-size: 17px;
+    line-height: 24px;
+
+    margin-top: -85px;
+    margin-right: 50px;
+  }
+
+}
+
+@media (--desktop-widths) {
+
+  .main-menu__list-item:nth-child(1) {
+    padding-right: 35px;
+    border-right: 1px solid $border-color;
+  }
+
+  .main-menu__list-item:nth-child(2) {
+    padding-left: 35px;
+  }
+
+  .main-menu__list-item:nth-child(1),
+  .main-menu__list-item:nth-child(2) {
+    font-size: 17px;
+    line-height: 24px;
+
+    margin-top: -85px;
+  }
+
 }
