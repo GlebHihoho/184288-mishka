@@ -1,62 +1,225 @@
-$video-width: 260px;
-
 .video {
-  width: $video-width;
+  @mixin container;
+
   background-color: white;
-  border: 1px solid #ececec;
-  margin: 30px;
 
-  &__header {
-    margin-top: 30px;
-    margin-left: 90px;
-    margin-bottom: 26px;
+  margin-bottom: 30px;
 
-    color: black;
-    font-family: OpenSans;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px;
-  }
-
-  &__video {
-    margin-bottom: 30px;
-  }
-
-  &__description {
-    margin: 0px;
-    margin-left: 35px;
-    margin-right: 45px;
-    padding: 0px;
-
-    color: #444;
-    font-family: OpenSans;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-
-  &__btn {
-    display: block;
-
-    margin-top: 30px;
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-bottom: 30px;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 26px;
-    padding-right: 26px;
-
-    background-color: white;
-    border: 2px solid #444;
-
-    color: #444;
-    font-family: OpenSans;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
+  font-size: 0;
+  line-height: 0;
 }
+
+@media (--tablet-widths) {
+
+}
+
+@media (--desktop-widths) {
+
+}
+
+/* ------------------------- */
+
+.video__header {
+  padding-top: 30px;
+  padding-left: 90px;
+  padding-right: 30px;
+  padding-bottom: 26px;
+
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  border: 1px solid $border-color;
+  border-bottom: none;
+
+  font-size: 17px;
+  line-height: 24px;
+}
+
+@media (--tablet-widths) {
+
+  .video__header {
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-top: 480px;
+    margin-left: 50px;
+    margin-right: 45px;
+
+    padding-bottom: 0;
+    padding-left: 110px;
+
+    border: none;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+  }
+
+}
+
+@media (--desktop-widths) {
+
+  .video__header {
+    float: right;
+    margin: 0;
+    padding: 0;
+
+    width: 150px;
+
+    padding-top: 100px;
+    padding-right: 140px;
+    padding-left: 76px;
+
+    margin-right: 50px;
+
+    border: none;
+    border-top: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+
+  }
+
+}
+
+/* ------------------------- */
+
+.video__video {
+  margin-left: 30px;
+}
+
+@media (--tablet-widths) {
+
+  .video__video {
+    width: 668px;
+    height: 455px;
+
+    margin-left: 50px;
+
+    float: left;
+    margin-top: -510px;
+  }
+
+}
+
+@media (--desktop-widths) {
+
+  .video__video {
+    width: 682px;
+    height: 455px;
+
+    float: none;
+
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+
+}
+
+/* ------------------------- */
+
+.video__options {
+  margin: 0px 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+
+  border: 1px solid $border-color;
+  border-top: none;
+}
+
+@media (--tablet-widths) {
+
+  .video__options {
+    margin-left: 50px;
+    margin-right: 45px;
+
+    padding-left: 40px;
+  }
+
+}
+
+@media (--desktop-widths) {
+
+  .video__options {
+    float: right;
+
+    width: 367px;
+
+    padding: 0;
+    margin-top: -410px;
+    margin-right: 50px;
+
+    padding-top: 40px;
+    border-left: none;
+  }
+
+}
+
+/* ------------------------- */
+
+.video__description {
+  margin: 0;
+
+  color: $grey;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (--tablet-widths) {
+
+  .video__description {
+
+  }
+
+}
+
+@media (--desktop-widths) {
+
+  .video__description {
+    width: 220px;
+    padding-left: 78px;
+    padding-bottom: 50px;
+  }
+
+}
+
+/* ------------------------- */
+
+.video__btn {
+  display: block;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: $bg-white;
+  border: 2px solid $grey;
+
+  color: $grey;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (--tablet-widths) {
+
+}
+
+@media (--desktop-widths) {
+
+  .video__btn {
+    margin-left: 80px;
+    margin-right: 57px;
+    margin-bottom: 35px;
+  }
+
+}
+
+/* ------------------------- */

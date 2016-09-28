@@ -5,6 +5,7 @@ $font-family: OpenSans;
 /*  color  */
 
 $bg-white: #ffffff;
+$bg-grey: #f1f1f1;
 
 $green: #63d1bb;
 $barkgreen: #56c3b2;
@@ -15,5 +16,5 @@ $black: black;
 
 $text: #000000;
 $border-color: #ececec;
-
+$border-color-gray: #e5e5e5;
 
