@@ -1,118 +1,84 @@
 .about-us {
   @mixin container;
 
-  padding-bottom: 60px;
-  padding-top: 40px;
+  padding-bottom: 30px;
 }
+
+/* --------------------------------------- */
+/* --------------  Шапка  ---------------- */
+/* --------------------------------------- */
 
 .about-us__header {
   margin-top: 35px;
   margin-left: 30px;
 
-  color: $black;
+
   font-size: 25px;
   line-height: 30px;
-}
 
-@media (--tablet-widths) {
-
-  .about-us__header {
+  @media (--tablet-widths) {
     margin-left: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
     font-size: 43px;
     line-height: 50px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .about-us__header {
+  @media (--desktop-widths) {
     margin-left: 255px;
 
     font-size: 53px;
     line-height: 57px;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* -------------  Список  ---------------- */
+/* --------------------------------------- */
 
 .about-us__list {
-  margin: 0px;
+  @mixin margin-reset;
   margin-left: 30px;
   margin-right: 40px;
-  padding: 0px;
 
-  color: $black;
-  font-size: 17px;
-  line-height: 17px;
+
+  font-weight: 700;
   list-style: none;
-}
 
-@media (--tablet-widths) {
-
-  .about-us__list {
+  @media (--tablet-widths) {
     margin-left: 50px;
 
     font-size: 20px;
     line-height: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .about-us__list {
+  @media (--desktop-widths) {
     margin-left: 255px;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* -----------  Пункты списка  ----------- */
+/* --------------------------------------- */
 
 .about-us__benefit {
-  margin-top: 85px;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 30px;
 
-  border: 5px solid white;
+  @media (--tablet-widths) {
+    width: 325px;
+  }
 }
 
-@media (--tablet-widths) {
-
-  .about-us__benefit {
-    width: 220px;
-  }
-
-  .about-us__benefit:nth-child(n+4) {
-    float: right;
-  }
-
-  .about-us__benefit:nth-child(4) {
-    margin-top: -330px;
-  }
-
-  .about-us__benefit:nth-child(5) {
-    margin-top: -200px;
-  }
-
-  .about-us__benefit:nth-child(6) {
-    margin-top: -50px;
-  }
-
-}
-
-@media (--desktop-widths) {
-
-  .about-us__benefit:nth-child(n+4) {
-    margin-right: 200px;
-  }
-
-}
-
-/* ------------------------- */
+/* --------------------------------------- */
+/* -------------  Картинки  ------=------- */
+/* --------------------------------------- */
 
 .about-us__img {
-  float: left;
-  margin-top: -70px;
+  display: block;
+  padding-bottom: 20px;
 }

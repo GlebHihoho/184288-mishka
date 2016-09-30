@@ -1,9 +1,13 @@
+/* font */
+
+@import "font.css";
+
 /*  other  */
 
 @import "normalize.css";
 @import "variables.css";
 @import "mixin.css";
-@import "blocks/body.css";
+@import "global.css";
 
 /*  other blocks  */
 

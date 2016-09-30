@@ -2,20 +2,16 @@
   @mixin container;
 
   padding-bottom: 40px;
-}
 
-@media (--tablet-widths) {
-
-  .contacts {
+  @media (--tablet-widths) {
     padding-bottom: 140px;
   }
-
 }
 
 /* ------------------------- */
 
 .contacts__content--cite {
-  border-bottom: 1px solid $green;
+  border-bottom: 1px solid $primary-color;
 
   text-decoration: none;
   color: $grey;
@@ -29,14 +25,15 @@
 
   vertical-align: top;
   display: inline-block;
-  color: #444;
+  color: $grey;
   font-size: 15px;
-  font-weight: 400;
   line-height: 30px;
   font-style: normal;
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ----------------- Шапка ------------------ */
+/* ------------------------------------------ */
 
 .contacts__header {
   margin: 0px;
@@ -44,34 +41,26 @@
   margin-top: 45px;
   margin-bottom: 42px;
 
-  font-weight: 700;
-}
-
-@media (--tablet-widths) {
-
-  .contacts__header {
+  @media (--tablet-widths) {
     margin-left: 50px;
     margin-top: 70px;
 
     font-size: 43px;
-    line-height: 50px;
+    line-height: 45px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .contacts__header {
+  @media (--desktop-widths) {
     margin-left: 255px;
     margin-top: 100px;
 
     font-size: 53px;
-    line-height: 57px;
+    line-height: 55px;
   }
-
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ----------------- Почта ------------------ */
+/* ------------------------------------------ */
 
 .contacts__mail {
   margin: 0px;
@@ -120,19 +109,9 @@
 
 }
 
-@media (--desktop-widths) {
-
-  .contacts__head {
-
-  }
-
-}
-
 /* ------------------------- */
 
-.contacts__address {
 
-}
 
 @media (--tablet-widths) {
 
