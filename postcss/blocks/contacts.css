@@ -69,11 +69,8 @@
   color: $grey;
   font-size: 15px;
   line-height: 30px;
-}
 
-@media (--tablet-widths) {
-
-  .contacts__mail {
+  @media (--tablet-widths) {
     display: inline-block;
     margin-left: 50px;
 
@@ -81,14 +78,9 @@
     line-height: 30px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .contacts__mail {
+  @media (--desktop-widths) {
     margin-left: 255px;
   }
-
 }
 
 /* ------------------------- */
@@ -99,37 +91,28 @@
   margin-left: 30px;
 
   font-weight: 400;
-}
 
-@media (--tablet-widths) {
-
-  .contacts__head {
+  @media (--tablet-widths) {
     margin-left: 0;
   }
-
 }
 
 /* ------------------------- */
 
+.contacts__address {
 
-
-@media (--tablet-widths) {
-
-  .contacts__address {
+  @media (--tablet-widths) {
     margin-left: 50px;
     display: inline-block;
-  }
+    }
 
-}
-
-@media (--desktop-widths) {
-
-  .contacts__address {
+  @media (--desktop-widths) {
     display: block;
     margin-left: 255px;
   }
 
 }
+
 
 /* ------------------------- */
 
@@ -159,7 +142,9 @@
 
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ----------------- Кнопка ----------------- */
+/* ------------------------------------------ */
 
 .contacts__btn {
   background-color: $bg-white;
@@ -177,23 +162,14 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-@media (--tablet-widths) {
-
-  .contacts__btn {
+  @media (--tablet-widths) {
     margin-left: 250px;
     margin-right: 250px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .contacts__btn {
+  @media (--desktop-widths) {
     margin-left: 255px;
     margin-right: 0;
   }
-
 }
-

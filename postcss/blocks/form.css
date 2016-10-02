@@ -4,129 +4,100 @@
 
 .form__field {
   border: none;
+  @mixin margin-reset;
 }
 
-@media (--tablet-widths) {
-
-}
-
-@media (--desktop-widths) {
-
-}
-
-/* ------------------------- */
+/* ------------------------------------------ */
+/* --------------- Описание ----------------- */
+/* ------------------------------------------ */
 
 .form__description {
-  margin: 0px;
-  padding: 0px;
+  @mixin margin-reset;
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 48px;
   padding-bottom: 30px;
 
   color: $grey;
-  font-size: 17px;
-  font-weight: 400;
   line-height: 30px;
-}
 
-@media (--tablet-widths) {
-
-  .form__description {
+  @media (--tablet-widths) {
     padding-left: 50px;
     padding-top: 70px;
     padding-bottom: 80px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .form__description {
+  @media (--desktop-widths) {
     padding-left: 225px;
     padding-top: 110px;
   }
-
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ----------- Группировка форм ------------- */
+/* ------------------------------------------ */
 
 .form__group {
   border: none;
+  border-top: 1px solid $primary-color;
   @mixin margin-reset;
+  margin-right: 30px;
+
+  @media (--tablet-widths) {
+    border: none;
+  }
 }
 
-@media (--tablet-widths) {
 
-}
-
-@media (--desktop-widths) {
-
-}
-
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ----------- Шапки названий форм ---------- */
+/* ------------------------------------------ */
 
 .form__group-title {
   margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 
-  color: $green;
+  color: $primary-color;
   text-transform: uppercase;
-}
+  font-weight: 700;
 
-@media (--tablet-widths) {
-
-  .form__group-title {
+  @media (--tablet-widths) {
     width: 100px;
     margin-left: 50px;
     margin-bottom: 0;
+    padding-left: 0;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .form__group-title {
+  @media (--desktop-widths) {
     margin-left: 115px;
   }
-
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ------------- Радио кнопки --------------- */
+/* ------------------------------------------ */
 
 .form__radio {
   display: none;
 }
 
+/* --------- Подписи радио кнопок ----------- */
+
 .form__radio-label {
   display: inline-block;
   position: relative;
 
-  margin-left: 60px;
+  font-weight: 700;
+
+  margin-left: 90px;
   padding-bottom: 30px;
 
-  &::after {
-    content: "";
-    width: 40px;
-    height: 40px;
-
-    position: absolute;
-    top: -12px;
-    left: -60px;
-
-
-    border: 2px solid $grey;
-    border-radius: 50%;
-    background-color: $bg-white;
-  }
-}
-
-@media (--tablet-widths) {
-
-  .form__radio-label {
+  @media (--tablet-widths) {
     display: block;
 
-    margin-left: 300px;
-    margin-top: -20px;
+    margin-left: 270px;
+    margin-top: -23px;
 
     padding-bottom: 60px;
 
@@ -134,36 +105,70 @@
     line-height: 19px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .form__radio-label {
-    margin-left: 305px;
+  @media (--desktop-widths) {
+    margin-left: 285px;
   }
-
 }
 
-/* ------------------------- */
+.form__radio-label::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: -12px;
+  left: -60px;
+
+
+  border: 2px solid $grey;
+  border-radius: 50%;
+  background-color: white;
+  z-index: -1;
+}
+
+input[type=radio]:checked + .form__radio-label::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+
+  position: absolute;
+  top: -12px;
+  left: -60px;
+
+  border: 10px solid red;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+/* ------------------------------------------ */
+/* ---------- Раздел выбора цвета ----------- */
+/* ------------------------------------------ */
+
+.form__container-color {
+  border: 2px solid black;
+
+  @media (--tablet-widths) {
+    padding-top: 80px;
+    background-color: $bg-grey;
+  }
+}
 
 .form__group--color {
 
-}
+  @media (--tablet-widths) {
 
-@media (--tablet-widths) {
+    .form__group--color {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-  .form__group--color {
-    background-color: $bg-grey;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
   }
-
 }
 
-/* ------------------------- */
+/* ---------- Раздел выбора цвета ----------- */
 
 .form__group-title--color {
 
@@ -172,7 +177,7 @@
 @media (--tablet-widths) {
 
   .form__group-title--color {
-    padding-top: 80px;
+
   }
 
 }
@@ -305,7 +310,7 @@
 @media (--tablet-widths) {
 
   .form__other {
-    background-color: $bg-grey;
+    /*background-color: $bg-grey;*/
   }
 
 }

@@ -172,17 +172,21 @@
     </div>
 
     <div class="card">
-      <img class="card__img" src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик, картинка" width="260" height="195">
-      <div class="card__options">
-        <h2 class="card__name">Зайчик-попрыгайчик</h2>
-        <p class="card__description">Рост 30 см, вес 200 г</p>
-        <div class="card__cost">
-          <p class="card__number-cost">1 200 руб.</p>
-          <button class="card__buy-btn">
-            <img class="card__buy-btn-img" src="img/icon-cart.svg" alt="Корзина, картинка" width="21" height="19">
-          </button>
+
+      <div class="card__container">
+        <img class="card__img" src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик, картинка" width="260" height="195">
+        <div class="card__options">
+          <h2 class="card__name">Зайчик-попрыгайчик</h2>
+          <p class="card__description">Рост 30 см, вес 200 г</p>
+          <div class="card__cost">
+            <p class="card__number-cost">1 200 руб.</p>
+            <button class="card__buy-btn">
+              <img class="card__buy-btn-img" src="img/icon-cart.svg" alt="Корзина, картинка" width="21" height="19">
+            </button>
+          </div>
         </div>
       </div>
+
     </div>
 
     <div class="video">
@@ -216,42 +220,48 @@
           <fieldset class="form__group">
             <legend class="form__group-title">Тип</legend>
 
-            <input id="accessory" class="form__radio" type="radio" value="accessory" name="type" checked>
-            <label class="form__radio-label" for="accessory">Аксессуары для интерьера</label>
+            <label class="form__radio-label">Аксессуары для интерьера
+              <input class="form__radio" type="radio" value="accessory" name="type" checked>
+            </label>
 
-            <input id="toys" class="form__radio" type="radio" value="toys" name="type">
-            <label class="form__radio-label" for="toys">Детская игрушка</label>
+            <label class="form__radio-label">Детская игрушка
+              <input class="form__radio" type="radio" value="toys" name="type">
+            </label>
           </fieldset>
 
-          <fieldset class="form__group  form__group--color">
-            <legend class="form__group-title  form__group-title--color">Цвет</legend>
+          <div class="form__container-color">
+            <fieldset class="form__group">
+              <legend class="form__group-title  form__group-title--color">Цвет</legend>
 
-            <div class="form__group--color">
-              <label class="form__checkbox-label">Белый
-                <input class="form__checkbox" type="checkbox" value="white" name="color" checked>
-              </label>
+              <div class="form__group--color">
+                <label class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" value="white" name="color" checked>
+                  <span class="form_checkbox-icon"></span>
+                  <span class="form_checkbox-name">Белый</span>
+                </label>
 
-              <label class="form__checkbox-label">Серый
-                <input class="form__checkbox" type="checkbox" value="grey" name="color" checked>
-              </label>
+                <label class="form__checkbox-label">Серый
+                  <input class="form__checkbox" type="checkbox" value="grey" name="color" checked>
+                </label>
 
-              <label class="form__checkbox-label">"Тиффани"
-                <input class="form__checkbox" type="checkbox" value="tiffany" name="color">
-              </label>
+                <label class="form__checkbox-label">"Тиффани"
+                  <input class="form__checkbox" type="checkbox" value="tiffany" name="color">
+                </label>
 
-              <label class="form__checkbox-label">Чёрный
-                <input class="form__checkbox" type="checkbox" value="black" name="color">
-              </label>
+                <label class="form__checkbox-label">Чёрный
+                  <input class="form__checkbox" type="checkbox" value="black" name="color">
+                </label>
 
-              <label class="form__checkbox-label">Розовый
-                <input class="form__checkbox" type="checkbox" value="pink" name="color">
-              </label>
+                <label class="form__checkbox-label">Розовый
+                  <input class="form__checkbox" type="checkbox" value="pink" name="color">
+                </label>
 
-              <label class="form__checkbox-label">Оранжевый
-                <input class="form__checkbox" type="checkbox" value="orange" name="color">
-              </label>
-            </div>
-          </fieldset>
+                <label class="form__checkbox-label">Оранжевый
+                  <input class="form__checkbox" type="checkbox" value="orange" name="color">
+                </label>
+              </div>
+            </fieldset>
+          </div>
 
           <fieldset class="form__group">
             <legend class="form__group-title">ФИО</legend>
@@ -269,19 +279,22 @@
             </label>
           </fieldset>
 
-          <div class="form__other">
-            <label for="tel" class="form__other-label">Тел
-              <input id="tel" class="form__text  form__text--tel-img" type="text" placeholder="+7 XXX XX XX" name="tel" required>
-            </label>
+          <div class="form__other  form__group--color">
+            <fieldset class="form__group">
+              <legend class="form__group-title">Тел</legend>
+              <input class="form__text  form__text--tel-img" type="text" placeholder="+7 XXX XX XX" name="tel" required>
+            </fieldset>
 
-            <label for="email" class="form__other-label">Email
+            <fieldset class="form__group">
+              <legend class="form__group-title">Email</legend>
               <input id="email" class="form__text  form__text--email-img" type="email" placeholder="Ваш Email" name="email" required>
-            </label>
+            </fieldset>
           </div>
 
-          <label class="form__other-label">Доп
+          <fieldset class="form__group">
+            <legend class="form__group-title">Доп</legend>
             <textarea class="form__other-text" placeholder="Опишите все ваши пожелания к заказу" name="other" cols="30" rows="10" required></textarea>
-          </label>
+          </fieldset>
 
           <p class="form__other-info">Все поля обязательны для заполнения</p>
           <button class="form__submit" type="submit">Отправить заказ</button>
