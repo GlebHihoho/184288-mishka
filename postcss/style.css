@@ -1,3 +1,10 @@
+/*  other  */
+
+@import "normalize.css";
+@import "variables.css";
+@import "mixin.css";
+@import "blocks/body.css";
+
 /*  other blocks  */
 
 @import "blocks/header.css";

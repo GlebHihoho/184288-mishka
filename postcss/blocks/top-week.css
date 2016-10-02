@@ -1,10 +1,6 @@
-$top-week-width: 320px;
-
 .top-week {
-  width: $top-week-width;
+  @mixin container;
   padding-bottom: 35px;
-
-  border: 2px solid blue;
 }
 
 .top-week__header {
@@ -17,12 +13,35 @@ $top-week-width: 320px;
 
   padding: 0px;
 
-  color: black;
-  font-family: OpenSans;
   font-size: 25px;
-  font-weight: 700;
   line-height: 30px;
 }
+
+@media (--tablet-widths) {
+
+  .top-week__header {
+    margin-left: 50px;
+    margin-bottom: 55px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+}
+
+@media (--desktop-widths) {
+
+  .top-week__header {
+    margin-left: 255px;
+    margin-top: 170px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+}
+
+/* ------------------------- */
 
 .top-week__top {
   margin-top: 0px;
@@ -31,13 +50,37 @@ $top-week-width: 320px;
 
   padding-top: 0px;
 
-  color: #63d1bb;
-  font-family: OpenSans;
+  color: $green;
   font-size: 17px;
-  font-weight: 700;
-  line-height: 16px;
+  line-height: 17px;
   text-transform: uppercase;
 }
+
+@media (--tablet-widths) {
+
+  .top-week__top {
+    float: right;
+    width: 100px;
+
+    text-align: center;
+
+    margin-right: 80px;
+    margin-top: -95px;
+  }
+
+}
+
+@media (--desktop-widths) {
+
+  .top-week__top {
+    float: left;
+
+    margin-left: 100px;
+  }
+
+}
+
+/* ------------------------- */
 
 .top-week__description {
   display: block;
@@ -46,25 +89,44 @@ $top-week-width: 320px;
   margin-right: 40px;
   margin-bottom: 30px;
 
-  color: #444;
-  font-family: OpenSans;
+  color: $grey;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
 }
 
+@media (--tablet-widths) {
+
+  .top-week__description {
+    width: 260px;
+
+    margin-left: 50px;
+    margin-bottom: 45px;
+  }
+
+}
+
+@media (--desktop-widths) {
+
+  .top-week__description {
+    margin-left: 255px;
+  }
+
+}
+
+/* ------------------------- */
+
 .top-week__options {
   margin-left: 32px;
   margin-right: 30px;
 
-  color: #444;
-  font-family: OpenSans;
+  color: $grey;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
 
   &-prop {
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $border-color;
   }
 
   &-value {
@@ -73,23 +135,94 @@ $top-week-width: 320px;
   }
 }
 
+@media (--tablet-widths) {
+
+  .top-week__options {
+    width: 260px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+
+    &-prop {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+@media (--desktop-widths) {
+
+  .top-week__options {
+    margin-left: 255px;
+  }
+
+}
+
+/* ------------------------- */
+
 .top-week__img {
   margin-left: 30px;
   margin-bottom: 30px;
 }
 
+@media (--tablet-widths) {
+
+  .top-week__img {
+    float: right;
+    width: 333px;
+    height: 404px;
+
+    margin-right: 50px;
+    margin-top: -300px;
+  }
+
+}
+
+@media (--desktop-widths) {
+
+  .top-week__img {
+    width: 525px;
+    height: 636px;
+
+    margin-top: -500px;
+  }
+
+}
+
+/* ------------------------- */
+
 .top-week__cost {
   margin-top: 0px;
   margin-left: 97px;
   margin-right: 97px;
-  margin-bottom: 30px;
+  padding-bottom: 20px;
 
-  color: #444;
-  font-family: OpenSans;
-  font-size: 17px;
+  color: $grey;
   font-weight: 700;
   line-height: 24px;
 }
+
+@media (--tablet-widths) {
+
+  .top-week__cost {
+    margin-left: 125px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+}
+
+@media (--desktop-widths) {
+
+  .top-week__cost {
+    margin-left: 300px;
+    margin-bottom: 30px;
+  }
+
+}
+
+/* ------------------------- */
 
 .top-week__btn {
   margin-left: 30px;
@@ -101,14 +234,30 @@ $top-week-width: 320px;
   padding-right: 85px;
 
 
-  background-color: white;
-  border: 2px solid #444;
+  background-color: $bg-white;
+  border: 2px solid $grey;
 
-  color: #444;
-  font-family: OpenSans;
+  color: $grey;
   font-size: 17px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 17px;
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (--tablet-widths) {
+
+  .top-week__btn {
+    margin-left: 50px;
+  }
+
+}
+
+@media (--desktop-widths) {
+
+  .top-week__btn {
+    margin-left: 255px;
+  }
+
+}
+
