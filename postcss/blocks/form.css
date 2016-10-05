@@ -78,10 +78,6 @@
 /* ------------ Контейнеры форм ------------- */
 /* ------------------------------------------ */
 
-.form__container {
-  /*padding-top: 30px;*/
-}
-
 
 /* ------------------------------------------ */
 /* ------------- Радио кнопки --------------- */
@@ -440,7 +436,7 @@ input[type=checkbox]:checked + .form__checkbox-icon::after {
     font-size: 17px;
   }
 
-  @media (--tablet-widths) {
+  @media (--desktop-widths) {
     padding-right: 240px;
   }
 }
