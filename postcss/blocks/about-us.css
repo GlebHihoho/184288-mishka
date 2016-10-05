@@ -51,8 +51,9 @@
     font-size: 20px;
     line-height: 20px;
 
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
+    columns: 2;
   }
 
   @media (--desktop-widths) {
