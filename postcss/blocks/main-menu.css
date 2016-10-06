@@ -2,26 +2,15 @@
   @mixin container;
 
   position: absolute;
-  top: 80px;
+  font-weight: 700;
+  background-color: white;
 
-  background-color: $bg-white;
-}
+  @media (--tablet-widths) {
+    background-color: inherit;
 
-.main-menu__list {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.main-menu__list-item {
-  display: block;
-  position: relative;
-
-  padding-left: 75px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  border-top: 1px solid $border-color;
+    top: 0;
+    left: 0;
+  }
 }
 
 .main-menu__img {
@@ -30,85 +19,170 @@
   left: 10%;
 }
 
-@media (--tablet-widths) {
+/* ------------------------------------ */
+/* ----------    СПИСОК      ---------- */
+/* ------------------------------------ */
 
-  .main-menu {
-    background-color: inherit;
+.main-menu__list {
+  @mixin margin-reset;
+  list-style: none;
+
+  @media (--tablet-widths) {
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .main-menu__list-item {
-    display: inline-block;
-    vertical-align: top;
-
-    border-top: none;
+  @media (--desktop-widths) {
+    align-items: center;
+    height: 80px;
   }
+}
 
-  .main-menu__list-item:nth-child(1) {
-    padding-left: 50px;
-  }
+/* ------------------------------------ */
+/* ---------- Начало  списка ---------- */
+/* ------------------------------------ */
 
-  .main-menu__list-item:nth-child(2) {
-    padding-left: 40px;
-  }
+.main-menu__start-list {
 
-  .main-menu__list-item:nth-child(1),
-  .main-menu__list-item:nth-child(2) {
+  @media (--tablet-widths) {
+    display: flex;
+    align-items: flex-end;
+
     font-size: 15px;
-    line-height: 24px;
+    line-height: 15px;
   }
 
-  .main-menu__list-item:nth-child(3) .main-menu__link-item {
-    font-size: 0;
-  }
+  @media (--desktop-widths) {
+    /*align-items: center;*/
 
-  .main-menu__list-item:nth-child(3) {
-    padding: 0;
-    margin: 0;
-    margin-right: 300px;
-    width: 100px;
-    height: 90px;
-    border-left: 1px solid $border-color;
-    border-right: 1px solid $border-color;
-  }
-
-  .main-menu__list-item:nth-child(3) .main-menu__img{
-    top: 45%;
-    left: 40%;
-  }
-
-  .main-menu__list-item:nth-child(3),
-  .main-menu__list-item:nth-child(4) {
-    margin-top: -90px;
-    float: right;
-  }
-
-  .main-menu__list-item:nth-child(4) {
     font-size: 17px;
-    line-height: 24px;
-
-    margin-top: -85px;
-    margin-right: 50px;
+    line-height: 20px;
   }
 
 }
 
-@media (--desktop-widths) {
+/* ------------------------------------ */
+/* ---------- Конец   списка ---------- */
+/* ------------------------------------ */
 
-  .main-menu__list-item:nth-child(1) {
+.main-menu__finish-list {
+
+  @media (--tablet-widths) {
+    display: flex;
+  }
+
+}
+
+/* ------------------------------------ */
+/* ---------- Элемент списка ---------- */
+/* ------------------------------------ */
+
+.main-menu__list-item {
+  position: relative;
+
+  padding-left: 75px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-top: 1px solid $border-color;
+
+  @media (--tablet-widths) {
+    padding: 0;
+    border-top: none;
+  }
+
+}
+
+/* --------------------------------------------------------- */
+/* ---------- Первый Элемент начала списка списка ---------- */
+/* --------------------------------------------------------- */
+
+.main-menu__start-list .main-menu__list-item:nth-child(1) {
+
+  @media (--tablet-widths) {
+    padding-left: 50px;
+  }
+
+  @media (--desktop-widths) {
     padding-right: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-right: 1px solid $border-color;
   }
 
-  .main-menu__list-item:nth-child(2) {
-    padding-left: 35px;
+}
+
+/* --------------------------------------------------------- */
+/* ---------- Второй Элемент начала списка списка ---------- */
+/* --------------------------------------------------------- */
+
+.main-menu__start-list .main-menu__list-item:nth-child(2) {
+
+  @media (--tablet-widths) {
+    padding-left: 40px;
   }
 
-  .main-menu__list-item:nth-child(1),
-  .main-menu__list-item:nth-child(2) {
-    font-size: 17px;
-    line-height: 24px;
+  @media (--desktop-widths) {
+    padding-right: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
-    margin-top: -85px;
+}
+
+/* --------------------------------------------------------- */
+/* ----------------- Третий Элемент  списка ---------------- */
+/* --------------------------------------------------------- */
+
+.main-menu__finish-list .main-menu__list-item:nth-child(1) {
+
+  @media (--tablet-widths) {
+    width: 80px;
+    height: 80px;
+
+    border-right: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+
+    font-size: 0;
+    line-height: 0;
+
+  }
+
+}
+
+.main-menu__list-item-search .main-menu__img {
+
+  @media (--tablet-widths) {
+    top: 40%;
+    left: 40%;
+  }
+
+}
+
+/* --------------------------------------------------------- */
+/* --------------- Четвёртый Элемент списка ---------------- */
+/* --------------------------------------------------------- */
+
+.main-menu__finish-list .main-menu__list-item:nth-child(2) {
+
+  @media (--tablet-widths) {
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-left: 80px;
+  }
+
+}
+
+.main-menu__list-item-card .main-menu__img {
+
+  @media (--tablet-widths) {
+    top: 25%;
+    left: 10%;
+  }
+
+  @media (--desktop-widths) {
+    top: 40%;
   }
 
 }

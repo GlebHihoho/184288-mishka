@@ -2,20 +2,16 @@
   @mixin container;
 
   padding-bottom: 40px;
-}
 
-@media (--tablet-widths) {
-
-  .contacts {
+  @media (--tablet-widths) {
     padding-bottom: 140px;
   }
-
 }
 
 /* ------------------------- */
 
 .contacts__content--cite {
-  border-bottom: 1px solid $green;
+  border-bottom: 1px solid $primary-color;
 
   text-decoration: none;
   color: $grey;
@@ -29,14 +25,15 @@
 
   vertical-align: top;
   display: inline-block;
-  color: #444;
+  color: $grey;
   font-size: 15px;
-  font-weight: 400;
   line-height: 30px;
   font-style: normal;
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ----------------- Шапка ------------------ */
+/* ------------------------------------------ */
 
 .contacts__header {
   margin: 0px;
@@ -44,34 +41,26 @@
   margin-top: 45px;
   margin-bottom: 42px;
 
-  font-weight: 700;
-}
-
-@media (--tablet-widths) {
-
-  .contacts__header {
+  @media (--tablet-widths) {
     margin-left: 50px;
     margin-top: 70px;
 
     font-size: 43px;
-    line-height: 50px;
+    line-height: 45px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .contacts__header {
+  @media (--desktop-widths) {
     margin-left: 255px;
     margin-top: 100px;
 
     font-size: 53px;
-    line-height: 57px;
+    line-height: 55px;
   }
-
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ----------------- Почта ------------------ */
+/* ------------------------------------------ */
 
 .contacts__mail {
   margin: 0px;
@@ -80,11 +69,8 @@
   color: $grey;
   font-size: 15px;
   line-height: 30px;
-}
 
-@media (--tablet-widths) {
-
-  .contacts__mail {
+  @media (--tablet-widths) {
     display: inline-block;
     margin-left: 50px;
 
@@ -92,14 +78,9 @@
     line-height: 30px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .contacts__mail {
+  @media (--desktop-widths) {
     margin-left: 255px;
   }
-
 }
 
 /* ------------------------- */
@@ -110,47 +91,28 @@
   margin-left: 30px;
 
   font-weight: 400;
-}
 
-@media (--tablet-widths) {
-
-  .contacts__head {
+  @media (--tablet-widths) {
     margin-left: 0;
   }
-
-}
-
-@media (--desktop-widths) {
-
-  .contacts__head {
-
-  }
-
 }
 
 /* ------------------------- */
 
 .contacts__address {
 
-}
-
-@media (--tablet-widths) {
-
-  .contacts__address {
+  @media (--tablet-widths) {
     margin-left: 50px;
     display: inline-block;
-  }
+    }
 
-}
-
-@media (--desktop-widths) {
-
-  .contacts__address {
+  @media (--desktop-widths) {
     display: block;
     margin-left: 255px;
   }
 
 }
+
 
 /* ------------------------- */
 
@@ -180,7 +142,9 @@
 
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ----------------- Кнопка ----------------- */
+/* ------------------------------------------ */
 
 .contacts__btn {
   background-color: $bg-white;
@@ -198,23 +162,14 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-@media (--tablet-widths) {
-
-  .contacts__btn {
+  @media (--tablet-widths) {
     margin-left: 250px;
     margin-right: 250px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .contacts__btn {
+  @media (--desktop-widths) {
     margin-left: 255px;
     margin-right: 0;
   }
-
 }
-

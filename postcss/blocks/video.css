@@ -17,7 +17,9 @@
 
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* ------------    Шапка   --------------- */
+/* --------------------------------------- */
 
 .video__header {
   padding-top: 30px;
@@ -35,11 +37,8 @@
 
   font-size: 17px;
   line-height: 24px;
-}
 
-@media (--tablet-widths) {
-
-  .video__header {
+  @media (--tablet-widths) {
     font-size: 20px;
     line-height: 24px;
 
@@ -55,14 +54,9 @@
     border-right: 1px solid $border-color;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .video__header {
+  @media (--desktop-widths) {
     float: right;
-    margin: 0;
-    padding: 0;
+    @mixin margin-reset;
 
     width: 150px;
 
@@ -75,20 +69,17 @@
     border: none;
     border-top: 1px solid $border-color;
     border-right: 1px solid $border-color;
-
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* ------------ Видео блок --------------- */
+/* --------------------------------------- */
 
 .video__video {
   margin-left: 30px;
-}
 
-@media (--tablet-widths) {
-
-  .video__video {
+  @media (--tablet-widths) {
     width: 668px;
     height: 455px;
 
@@ -98,11 +89,7 @@
     margin-top: -510px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .video__video {
+  @media (--desktop-widths) {
     width: 682px;
     height: 455px;
 
@@ -111,10 +98,11 @@
     margin-top: 0;
     margin-bottom: 100px;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* ---------- Характеристики ------------- */
+/* --------------------------------------- */
 
 .video__options {
   margin: 0px 30px;
@@ -124,22 +112,15 @@
 
   border: 1px solid $border-color;
   border-top: none;
-}
 
-@media (--tablet-widths) {
-
-  .video__options {
+  @media (--tablet-widths) {
     margin-left: 50px;
     margin-right: 45px;
 
     padding-left: 40px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .video__options {
+  @media (--desktop-widths) {
     float: right;
 
     width: 367px;
@@ -151,10 +132,11 @@
     padding-top: 40px;
     border-left: none;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* ------------- Описание ---------------- */
+/* --------------------------------------- */
 
 .video__description {
   margin: 0;
@@ -163,27 +145,17 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
-}
 
-@media (--tablet-widths) {
-
-  .video__description {
-
-  }
-
-}
-
-@media (--desktop-widths) {
-
-  .video__description {
+  @media (--desktop-widths) {
     width: 220px;
     padding-left: 78px;
     padding-bottom: 50px;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* -------------  Кнопка  ---------------- */
+/* --------------------------------------- */
 
 .video__btn {
   display: block;
@@ -206,20 +178,12 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-}
 
-@media (--tablet-widths) {
-
-}
-
-@media (--desktop-widths) {
-
-  .video__btn {
+  @media (--desktop-widths) {
     margin-left: 80px;
     margin-right: 57px;
     margin-bottom: 35px;
   }
-
 }
 
 /* ------------------------- */

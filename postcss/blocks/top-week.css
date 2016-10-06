@@ -1,86 +1,91 @@
 .top-week {
   @mixin container;
-  padding-bottom: 35px;
 }
+
+/* ------------------------------------------ */
+/* ------------ Контейнер шапки ------------- */
+/* ------------------------------------------ */
+
+.top-week__header-container {
+  font-weight: 700;
+
+  @media (--tablet-widths) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 55px;
+  }
+
+  @media (--desktop-widths) {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+
+    margin-top: 130px;
+  }
+
+}
+
+/* ---------------- Шапка ----------------- */
 
 .top-week__header {
   display: block;
 
-  margin: 0px;
-  margin-left: 32px;
-  margin-top: 34px;
-  margin-bottom: 8px;
+  @mixin margin-reset;
 
-  padding: 0px;
+  margin-left: 30px;
+  margin-top: 35px;
+  margin-bottom: 10px;
 
   font-size: 25px;
   line-height: 30px;
-}
 
-@media (--tablet-widths) {
-
-  .top-week__header {
-    margin-left: 50px;
-    margin-bottom: 55px;
+  @media (--tablet-widths) {
+    @mixin margin-reset;
+    align-items: center;
 
     font-size: 43px;
-    line-height: 50px;
+    line-height: 45px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .top-week__header {
-    margin-left: 255px;
-    margin-top: 170px;
+  @media (--desktop-widths) {
+    margin-left: 55px;
 
     font-size: 53px;
-    line-height: 57px;
+    line-height: 55px;
   }
-
 }
 
-/* ------------------------- */
+/* -------------- Подпись шапки --------------- */
 
 .top-week__top {
-  margin-top: 0px;
+  @mixin margin-reset;
   margin-left: 32px;
   margin-bottom: 30px;
 
-  padding-top: 0px;
-
-  color: $green;
+  color: $primary-color;
   font-size: 17px;
   line-height: 17px;
   text-transform: uppercase;
-}
 
-@media (--tablet-widths) {
-
-  .top-week__top {
-    float: right;
-    width: 100px;
-
+  @media (--tablet-widths) {
+    @mixin margin-reset;
+    align-self: center;
     text-align: center;
 
-    margin-right: 80px;
-    margin-top: -95px;
+    width: 100px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .top-week__top {
-    float: left;
-
-    margin-left: 100px;
+  @media (--desktop-widths) {
+    margin-left: 50px;
   }
-
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* --------------- Описание ----------------- */
+/* ------------------------------------------ */
 
 .top-week__description {
   display: block;
@@ -93,138 +98,121 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-}
 
-@media (--tablet-widths) {
-
-  .top-week__description {
+  @media (--tablet-widths) {
     width: 260px;
 
     margin-left: 50px;
     margin-bottom: 45px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .top-week__description {
+  @media (--desktop-widths) {
     margin-left: 255px;
   }
-
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ----------- Характеристики  -------------- */
+/* ------------------------------------------ */
 
 .top-week__options {
-  margin-left: 32px;
+  margin-left: 30px;
   margin-right: 30px;
+  margin-bottom: 30px;
 
   color: $grey;
   font-size: 15px;
-  font-weight: 400;
   line-height: 20px;
 
-  &-prop {
-    border-bottom: 1px solid $border-color;
-  }
-
-  &-value {
-    margin-top: -20px;
-    margin-left: 90px;
-  }
-}
-
-@media (--tablet-widths) {
-
-  .top-week__options {
+  @media (--tablet-widths) {
     width: 260px;
     margin-left: 50px;
     margin-bottom: 60px;
-
-    &-prop {
-      padding-bottom: 10px;
-      margin-bottom: 10px;
-    }
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .top-week__options {
+  @media (--desktop-widths) {
     margin-left: 255px;
+    margin-bottom: 110px;
   }
-
 }
 
-/* ------------------------- */
+.top-week__options-row {
+  display: flex;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.top-week__options-prop {
+  width: 100px;
+}
+
+/* ------------------------------------------ */
+/* --------------  Картинка ----------------- */
+/* ------------------------------------------ */
 
 .top-week__img {
-  margin-left: 30px;
+  @mixin margin-alignment;
   margin-bottom: 30px;
-}
+  display: block;
 
-@media (--tablet-widths) {
-
-  .top-week__img {
+  @media (--tablet-widths) {
     float: right;
     width: 333px;
     height: 404px;
 
     margin-right: 50px;
-    margin-top: -300px;
+    margin-top: -290px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .top-week__img {
+  @media (--desktop-widths) {
     width: 525px;
     height: 636px;
-
-    margin-top: -500px;
+    margin-bottom: 0;
+    margin-top: -510px;
   }
-
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ---------------  Футер  ------------------ */
+/* ------------------------------------------ */
+
+.top-week__footer {
+  margin-bottom: 35px;
+
+  @media (--desktop-widths) {
+    /*margin-top: 50px;*/
+  }
+}
+
+/* --------------  Cтоимость ---------------- */
 
 .top-week__cost {
-  margin-top: 0px;
-  margin-left: 97px;
-  margin-right: 97px;
-  padding-bottom: 20px;
+  @mixin margin-reset;
+  margin-bottom: 30px;
+  text-align: center;
 
   color: $grey;
   font-weight: 700;
-  line-height: 24px;
-}
 
-@media (--tablet-widths) {
-
-  .top-week__cost {
-    margin-left: 125px;
+  @media (--tablet-widths) {
+    margin-bottom: 35px;
 
     font-size: 20px;
-    line-height: 24px;
+    line-height: 20px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .top-week__cost {
-    margin-left: 300px;
-    margin-bottom: 30px;
+  @media (--desktop-widths) {
+    margin-left: 225px;
   }
-
 }
 
-/* ------------------------- */
+/* ---------------  Кнопка ------------------ */
 
 .top-week__btn {
+  display: block;
+  width: 90px;
+
   margin-left: 30px;
   margin-right: 30px;
 
@@ -243,21 +231,12 @@
   line-height: 17px;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-@media (--tablet-widths) {
-
-  .top-week__btn {
+  @media (--tablet-widths) {
     margin-left: 50px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .top-week__btn {
+  @media (--desktop-widths) {
     margin-left: 255px;
   }
-
 }
-

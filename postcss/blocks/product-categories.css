@@ -1,65 +1,89 @@
 .product-categories {
   @mixin container;
 
-  font-size: 0;
+  font-weight: 700;
+
+  @media (--tablet-widths) {
+    display: flex;
+    justify-content: center;
+
+    margin-top: -118px;
+  }
 }
 
 .product-categories__category {
   display: block;
+  position: relative;
+  z-index: -1;
 
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 29px;
+  padding-left: 30px;
 
-  color: $bg-white;
+  color: white;
   font-size: 19px;
-  line-height: 24px;
+  line-height: 25px;
 
-  &--objects {
-    background-color: $green;
-  }
+  @media (--tablet-widths) {
+    z-index: 1;
 
-  &--toy {
-    background-color: $barkgreen;
-  }
-}
-
-@media (--tablet-widths) {
-
-  .product-categories__category {
     padding-top: 35px;
     padding-bottom: 35px;
+    padding-left: 35px;
+    padding-right: 150px;
 
-    margin-top: -92px;
-
-    &--objects {
-      float: left;
-      margin-left: 50px;
-      width: 301px;
-    }
-
-    &--toy {
-      float: right;
-      margin-right: 50px;
-      width: 301px;
-    }
-
+    font-size: 20px;
+    line-height: 25px;
   }
 
+  @media (--desktop-widths) {
+    padding-right: 340px;
+  }
 }
 
-@media (--desktop-widths) {
+.product-categories__category--objects {
+  background-color: $primary-color;
+}
 
-  .product-categories__category {
+.product-categories__category--toy {
+  background-color: $secondary-color;
+}
 
-    &--objects {
-      width: 496px;
-    }
+/* ---------------------------------------------------------- */
+/* --------------------- Блок текста ------------------------ */
+/* ---------------------------------------------------------- */
 
-    &--toy {
-      width: 496px;
-    }
+.product-categories__text {
+  display: block;
+  width: 150px;
+}
 
-  }
+/* ---------------------------------------------------------- */
+/* ----------------------- Картинки ------------------------- */
+/* ---------------------------------------------------------- */
 
+.product-categories__category--objects::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 10%;
+
+  width: 41px;
+  height: 62px;
+
+  background-image: url(../img/icon-interior.svg);
+  background-repeat: no-repeat;
+}
+
+.product-categories__category--toy::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 8%;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url(../img/icon-toy.svg);
+  background-repeat: no-repeat;
 }

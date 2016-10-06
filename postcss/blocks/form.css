@@ -4,343 +4,446 @@
 
 .form__field {
   border: none;
+  @mixin margin-reset;
 }
 
-@media (--tablet-widths) {
-
-}
-
-@media (--desktop-widths) {
-
-}
-
-/* ------------------------- */
+/* ------------------------------------------ */
+/* --------------- Описание ----------------- */
+/* ------------------------------------------ */
 
 .form__description {
-  margin: 0px;
-  padding: 0px;
+  @mixin margin-reset;
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 48px;
   padding-bottom: 30px;
 
   color: $grey;
-  font-size: 17px;
-  font-weight: 400;
   line-height: 30px;
-}
 
-@media (--tablet-widths) {
-
-  .form__description {
+  @media (--tablet-widths) {
     padding-left: 50px;
     padding-top: 70px;
     padding-bottom: 80px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .form__description {
+  @media (--desktop-widths) {
     padding-left: 225px;
     padding-top: 110px;
   }
-
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ----------- Группировка форм ------------- */
+/* ------------------------------------------ */
 
 .form__group {
   border: none;
+  border-top: 1px solid $primary-color;
   @mixin margin-reset;
+  margin-right: 30px;
+
+  @media (--tablet-widths) {
+    border: none;
+  }
 }
 
-@media (--tablet-widths) {
-
-}
-
-@media (--desktop-widths) {
-
-}
-
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ----------- Шапки названий форм ---------- */
+/* ------------------------------------------ */
 
 .form__group-title {
   margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 
-  color: $green;
+  color: $primary-color;
   text-transform: uppercase;
-}
+  font-weight: 700;
 
-@media (--tablet-widths) {
-
-  .form__group-title {
+  @media (--tablet-widths) {
     width: 100px;
     margin-left: 50px;
     margin-bottom: 0;
+    padding-left: 0;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .form__group-title {
+  @media (--desktop-widths) {
     margin-left: 115px;
   }
-
 }
 
-/* ------------------------- */
 
-.form__radio {
+/* ------------------------------------------ */
+/* ------------ Контейнеры форм ------------- */
+/* ------------------------------------------ */
+
+
+/* ------------------------------------------ */
+/* ------------- Радио кнопки --------------- */
+/* ------------------------------------------ */
+
+.form__radio-input {
   display: none;
 }
 
+/* --------- Подписи радио кнопок ----------- */
+
 .form__radio-label {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  align-items: center;
 
-  margin-left: 60px;
-  padding-bottom: 30px;
+  font-weight: 700;
 
-  &::after {
-    content: "";
-    width: 40px;
-    height: 40px;
+  margin-left: 30px;
+  margin-bottom: 15px;
 
-    position: absolute;
-    top: -12px;
-    left: -60px;
+  @media (--tablet-widths) {
+    margin-left: 0;
+  }
 
+  @media (--desktop-widths) {
 
-    border: 2px solid $grey;
-    border-radius: 50%;
-    background-color: $bg-white;
   }
 }
 
-@media (--tablet-widths) {
 
-  .form__radio-label {
-    display: block;
+.form__label-container {
 
-    margin-left: 300px;
-    margin-top: -20px;
-
-    padding-bottom: 60px;
-
-    font-size: 19px;
-    line-height: 19px;
+  @media (--tablet-widths) {
+    margin-top: -30px;
+    margin-left: 220px;
   }
 
 }
 
-@media (--desktop-widths) {
+/* --------- Стилизация радио кнопок ----------- */
 
-  .form__radio-label {
-    margin-left: 305px;
+.form__radio-icon {
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid $grey;
+  border-radius: 50%;
+}
+
+input[type=radio]:checked + .form__radio-icon::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+
+  margin-left: 12px;
+  margin-top: 12px;
+
+  border-radius: 50%;
+  background-color: $green;
+}
+
+/* --------- Подпись радио кнопок ----------- */
+
+.form__radio-name {
+  width: 150px;
+  padding-left: 20px;
+
+  @media (--tablet-widths) {
+    width: auto;
   }
-
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* ---------- Раздел выбора цвета ----------- */
+/* ------------------------------------------ */
 
-.form__group--color {
+.form__label-container--color {
 
-}
-
-@media (--tablet-widths) {
-
-  .form__group--color {
-    background-color: $bg-grey;
+  @media (--tablet-widths) {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
     flex-wrap: wrap;
+
+    margin-bottom: 35px;
+  }
+}
+
+.form__container--color {
+
+  @media (--tablet-widths) {
+    background-color: $bg-grey;
+
+    margin-top: 35px;
+    padding-top: 50px;
   }
 
 }
-
-/* ------------------------- */
 
 .form__group-title--color {
 
-}
-
-@media (--tablet-widths) {
-
-  .form__group-title--color {
-    padding-top: 80px;
+  @media (--tablet-widths) {
+    padding-top: 30px;
   }
 
 }
 
-/* ------------------------- */
-
-.form__checkbox {
+.form__checkbox-input {
   display: none;
 }
 
 .form__checkbox-label {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+
+  margin-left: 30px;
+  margin-bottom: 25px;
+
+  @media (--tablet-widths) {
+    margin-left: 0;
+
+    width: 250px;
+  }
+}
+
+/* --------- Стилизация чекбокс кнопок ----------- */
+
+.form__checkbox-icon {
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid $grey;
+}
+
+.form__checkbox-name {
+  padding-left: 20px;
+}
+
+input[type=checkbox]:checked + .form__checkbox-icon::after {
+  content: "";
+
   display: block;
-  position: relative;
+  width: 20px;
+  height: 10px;
 
-  margin-left: 60px;
-  padding-bottom: 46px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
 
-  &::after {
-    content: "";
-    width: 40px;
-    height: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
 
-    position: absolute;
-    top: -12px;
-    left: -60px;
+  transform: rotate(-45deg);
+}
 
-    border: 2px solid #444;
+/* ------------------------------------------ */
+/* -----------  Раздел ввода ФИО  ----------- */
+/* ------------------------------------------ */
+
+.form__container--name {
+  border: 2px solid red;
+  padding-bottom: 30px;
+
+  @media (--tablet-widths) {
+    padding-bottom: 70px;
   }
 }
 
-@media (--tablet-widths) {
+.form__container--name .form__group-title {
+  margin-bottom: 0;
 
-  .form__checkbox-label {
-    width: 200px;
-    margin-left: 100px;
+  @media (--tablet-widths) {
+    padding-top: 70px;
   }
-
 }
 
-@media (--desktop-widths) {
+.form__container--name .form__label-container {
 
+  @media (--tablet-widths) {
+    margin-top: -60px;
+  }
 }
-
-/* ------------------------- */
 
 .form__text-label {
   display: block;
+  padding-left: 30px;
+  padding-top: 25px;
 
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-@media (--tablet-widths) {
-
-  .form__text-label {
-    margin-left: 220px;
-    margin-top: -20px;
-
-    padding-bottom: 60px;
+  @media (--tablet-widths) {
+    padding-left: 0;
   }
 
-}
+  @media (--desktop-widths) {
 
-@media (--desktop-widths) {
-
-  .form__text-label {
-    margin-left: 230px;
-    margin-top: -20px;
-
-    padding-bottom: 60px;
   }
-
 }
 
-/* ------------------------- */
-
-.form__text {
-
-}
-
-@media (--tablet-widths) {
-
-  .form__text--name {
-    float: right;
-    margin-right: 150px;
-  }
-
-}
-
-@media (--desktop-widths) {
-
-  .form__text--name {
-    margin-right: 250px;
-  }
-
-}
-
-
-.form__other-label {
+.form__text-name {
   display: block;
-  margin: 0px;
-  margin-left: 15px;
-  margin-bottom: 20px;
-  margin-top: 15px;
-  padding: 0px;
+  font-weight: 700;
 
-  color: $green;
-  text-transform: uppercase;
-}
-
-@media (--tablet-widths) {
-
-  .form__other-label {
-    margin-lefT: 50px;
+  @media (--tablet-widths) {
+    display: inline-block;
+    padding-right: 25px;
   }
 
 }
 
-@media (--desktop-widths) {
+.form__text-input {
+  box-sizing: border-box;
+  width: 260px;
+  height: 50px;
 
-  .form__other-label {
-    margin-lefT: 110px;
+  border: none;
+  border-bottom: 2px solid black;
+
+  @media (--tablet-widths) {
+    width: 375px;
+    padding-left: 20px;
   }
 
+  @media (--desktop-widths) {
+    width: 575px;
+  }
 }
 
-/* ------------------------- */
+.form__text-input--name {
 
+  @media (--tablet-widths) {
+    width: 420px;
+  }
 
-@media (--tablet-widths) {
+  @media (--desktop-widths) {
+    width: 620px;
+  }
+}
 
-  .form__other {
+/* ------------------------------------------ */
+/* -----------  Раздел Tel Email  ----------- */
+/* ------------------------------------------ */
+
+.form__container--other {
+  border: 2px solid black;
+
+  @media (--tablet-widths) {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
     background-color: $bg-grey;
   }
-
 }
 
-/* ------------------------- */
+.form__container--other .form__group-title {
+  margin-bottom: 0;
+
+  @media (--tablet-widths) {
+    display: inline-block;
+  }
+
+  @media (--desktop-widths) {
+    padding-right: 0;
+  }
+}
+
+.form__container--other .form__text-input {
+  margin-left: 30px;
+  margin-bottom: 40px;
+
+  @media (--tablet-widths) {
+    display: inline-block;
+    width: 490px;
+
+    background: $bg-grey;
+  }
+
+  @media (--desktop-widths) {
+    width: 690px;
+    margin-left: 0;
+  }
+}
+
+/* ------------------------------------------ */
+/* -------------    Коммент    -------------- */
+/* ------------------------------------------ */
+
+.form__comment {
+  box-sizing: border-box;
+  width: 260px;
+  height: 142px;
+
+  margin-left: 30px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid black;
+
+  @media (--tablet-widths) {
+    width: 490px;
+    margin-bottom: 0;
+  }
+
+  @media (--desktop-widths) {
+    width: 690px;
+    margin-left: 0;
+  }
+}
+
+.form__container--comment {
+  border: 2px solid black;
+
+  @media (--tablet-widths) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+.form__container--comment .form__group-title {
+
+  @media (--tablet-widths) {
+    display: inline-block;
+  }
+
+  @media (--desktop-widths) {
+    padding-right: 0;
+  }
+}
+
+/* -------------  Футер форм  --------------- */
+
+.form__footer-container {
+  text-align: center;
+  padding-bottom: 55px;
+
+  border: 2px solid red;
+
+  @media (--tablet-widths) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @media (--desktop-widths) {
+    padding-bottom: 95px;
+  }
+}
 
 .form__other-info {
-  margin: 0px;
-  padding: 0px;
-  padding-top: 18px;
-  padding-bottom: 22px;
-  padding-left: 28px;
+  @mixin margin-reset;
+  padding-bottom: 20px;
 
-  color: $grey;
   font-size: 14px;
-  line-height: 15px;
-}
 
-@media (--tablet-widths) {
+  @media (--tablet-widths) {
+    padding-right: 50px;
 
-  .form__other-info {
-
+    font-size: 17px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .form__other-info {
-
+  @media (--desktop-widths) {
+    padding-right: 240px;
   }
-
 }
 
-/* ------------------------- */
+/* ------------------------------------------ */
+/* -------------    Кнопка     -------------- */
+/* ------------------------------------------ */
 
 .form__submit {
   padding-left: 47px;
@@ -348,14 +451,18 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-
   background-color: white;
   border: 2px solid $grey;
 
   color: $grey;
-  font-family: OpenSans;
-  font-size: 17px;
   font-weight: 700;
-  line-height: 16px;
   text-transform: uppercase;
+
+  @media (--tablet-widths) {
+    margin-left: 50px;
+  }
+
+  @media (--desktop-widths) {
+    margin-left: 220px;
+  }
 }
