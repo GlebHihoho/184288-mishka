@@ -4,20 +4,19 @@
   padding-bottom: 45px;
 }
 
+/* --------------------------------------- */
+/* --------------  Шапка  ---------------- */
+/* --------------------------------------- */
+
 .reviews__header {
-  margin: 0px;
+  @mixin margin-reset;
   margin-left: 30px;
   margin-bottom: 38px;
-  padding: 0px;
 
-  color: $text;
   font-size: 25px;
   line-height: 30px;
-}
 
-@media (--tablet-widths) {
-
-  .reviews__header {
+  @media (--tablet-widths) {
     margin-left: 50px;
     margin-top: 85px;
     margin-bottom: 65px;
@@ -26,113 +25,85 @@
     line-height: 50px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .reviews__header {
+  @media (--desktop-widths) {
     margin-left: 255px;
 
     font-size: 53px;
     line-height: 57px;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* -------------- Описание --------------- */
+/* --------------------------------------- */
 
 .reviews__description {
-  margin: 0px;
+  @mixin margin-reset;
   margin-left: 30px;
   margin-right: 35px;
   margin-bottom: 40px;
-  padding: 0px;
 
   color: $grey;
   font-size: 15px;
-  font-weight: 400;
   line-height: 30px;
-}
 
-@media (--tablet-widths) {
-
-  .reviews__description {
+  @media (--tablet-widths) {
     margin-left: 50px;
     margin-right: 70px;
     margin-bottom: 70px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .reviews__description {
+  @media (--desktop-widths) {
     margin-left: 255px;
     margin-right: 150px;
     margin-bottom: 50px;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* ------------- ИМЯ Комента ------------- */
+/* --------------------------------------- */
 
 .reviews__name {
-  margin: 0px;
+  @mixin margin-reset;
   margin-left: 30px;
-  padding: 0px;
 
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   text-decoration: none;
-}
 
-@media (--tablet-widths) {
-
-  .reviews__name {
+  @media (--tablet-widths) {
     margin-left: 50px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .reviews__name {
+  @media (--desktop-widths) {
     margin-left: 255px;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* --------------   ПОчта   -------------- */
+/* --------------------------------------- */
 
 .reviews__mail {
-  margin: 0px;
+  @mixin margin-reset;
   margin-left: 30px;
-  margin-bottom: 36px;
-  padding: 0px;
+  margin-bottom: 35px;
 
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-}
-
-@media (--tablet-widths) {
-
-  .reviews__mail {
+  @media (--tablet-widths) {
     margin-left: 50px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .reviews__mail {
+  @media (--desktop-widths) {
     margin-left: 255px;
   }
-
 }
 
-/* ------------------------- */
+
+/* --------------------------------------- */
+/* --------------   Кнопка   ------------- */
+/* --------------------------------------- */
 
 .reviews__btn {
   margin-left: 30px;
@@ -143,35 +114,29 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  background-color: $bg-white;
+  background-color: white;
   border: 2px solid $grey;
 
   color: $grey;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-@media (--tablet-widths) {
-
-  .reviews__btn {
+  @media (--tablet-widths) {
     float: right;
     margin-top: -395px;
     margin-left: 300px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .reviews__btn {
+  @media (--desktop-widths) {
     margin-top: -350px;
     margin-left: 600px;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* --------------  Стрелки   ------------- */
+/* --------------------------------------- */
 
 .reviews__switch {
   margin-left: 30px;
@@ -183,11 +148,21 @@
 
   font-size: 0px;
   line-height: 0px;
+
+  @media (--tablet-widths) {
+    border: none;
+    float: right;
+    margin-top: -90px;
+  }
 }
 
 .reviews__switch-prev {
   display: inline-block;
   border-right: 1px solid $border-color;
+
+  @media (--tablet-widths) {
+    border: none;
+  }
 }
 
 .reviews__switch-next {
@@ -204,18 +179,4 @@
 
   font-size: 0px;
   line-height: 0px;
-}
-
-@media (--tablet-widths) {
-
-  .reviews__switch {
-    border: none;
-    float: right;
-    margin-top: -90px;
-  }
-
-  .reviews__switch-prev {
-    border: none;
-  }
-
 }

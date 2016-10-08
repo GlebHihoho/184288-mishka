@@ -5,30 +5,24 @@
 
   font-size: 0px;
   line-height: 0px;
-}
 
-@media (--desktop-widths) {
-
-  .card {
-    display: inline-block;
-    vertical-align: top;
-
-    margin-left: 60px;
+  @media (--desktop-widths) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* ------------  Картинка  --------------- */
+/* --------------------------------------- */
 
 .card__img {
   margin-top: 30px;
   margin-left: 30px;
   margin-right: 30px;
-}
 
-@media (--tablet-widths) {
-
-  .card__img {
+  @media (--tablet-widths) {
     width: 334px;
     height: 334px;
 
@@ -36,34 +30,27 @@
     margin-left: 50px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .card__img {
+  @media (--desktop-widths) {
     width: 316px;
     height: 462px;
 
     margin-bottom: 0;
-    margin-right: 50px;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* ------------  Хар-ки    --------------- */
+/* --------------------------------------- */
 
 .card__options {
-  background-color: $bg-white;
+  background-color: white;
   border: 1px solid $border-color;
   margin-left: 30px;
   margin-right: 30px;
   padding: 30px;
   padding-bottom: 0px;
-}
 
-@media (--tablet-widths) {
-
-  .card__options {
+  @media (--tablet-widths) {
     display: inline-block;
     vertical-align: top;
 
@@ -74,11 +61,7 @@
     padding-right: 30px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .card__options {
+  @media (--desktop-widths) {
     display: block;
     width: 316px;
 
@@ -86,10 +69,11 @@
     margin-left: 50px;
     padding: 0;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* ------------  Название  --------------- */
+/* --------------------------------------- */
 
 .card__name {
   margin: 0px;
@@ -100,29 +84,23 @@
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-}
 
-@media (--tablet-widths) {
-
-  .card__name {
+  @media (--tablet-widths) {
     padding-right: 80px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .card__name {
+  @media (--desktop-widths) {
     padding-right: 0;
     padding-left: 30px;
     padding-top: 30px;
 
     text-align: left;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* ------------  Описание  --------------- */
+/* --------------------------------------- */
 
 .card__description {
   margin: 0px;
@@ -132,53 +110,37 @@
   color: $grey;
   font-size: 13px;
   line-height: 30px;
-}
 
-@media (--tablet-widths) {
-
-  .card__description {
+  @media (--tablet-widths) {
     margin-bottom: 179px;
 
     font-size: 15px;
     line-height: 30px;
   }
 
-}
-
-@media (--desktop-widths) {
-
-  .card__description {
+  @media (--desktop-widths) {
     margin-bottom: 45px;
 
     padding-left: 30px;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* ------------  Стоимость  -------------- */
+/* --------------------------------------- */
 
 .card__cost {
   border-top: 2px solid $border-color;
-}
 
-@media (--tablet-widths) {
-
-  .card__cost {
-
-  }
-
-}
-
-@media (--desktop-widths) {
-
-  .card__cost {
+  @media (--desktop-widths) {
     margin-left: 30px;
     margin-right: 30px;
   }
-
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
+/* ------------ Число в цене ------------- */
+/* --------------------------------------- */
 
 .card__number-cost {
   font-size: 15px;
@@ -186,45 +148,15 @@
   line-height: 24px;
 }
 
-@media (--tablet-widths) {
-
-  .card__number-cost {
-
-  }
-
-}
-
-@media (--desktop-widths) {
-
-  .card__number-cost {
-
-  }
-
-}
-
-/* ------------------------- */
+/* --------------------------------------- */
+/* -------------   Кнопка   -------------- */
+/* --------------------------------------- */
 
 .card__buy-btn {
   float: right;
   margin-top: -40px;
   border: none;
   background-color: $bg-white;
-}
-
-@media (--tablet-widths) {
-
-  .card__buy-btn {
-
-  }
-
-}
-
-@media (--desktop-widths) {
-
-  .card__buy-btn {
-
-  }
-
 }
 
 /* ------------------------- */
