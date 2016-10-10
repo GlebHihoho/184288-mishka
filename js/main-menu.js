@@ -8,8 +8,8 @@ function openClose(click) {
   mainMenu.classList.toggle('open-close-js');
 
   if (mainMenu.classList.contains('open-close-js')) {
-    menuImg.src = 'img/icon-menu-close.svg';
-  } else {
     menuImg.src = 'img/icon-menu-open.svg';
+  } else {
+    menuImg.src = 'img/icon-menu-close.svg';
   }
 }

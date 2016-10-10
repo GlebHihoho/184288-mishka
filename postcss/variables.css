@@ -7,6 +7,8 @@ $font-family: OpenSans;
 $bg-white: #ffffff;
 $bg-grey: #f1f1f1;
 
+$bg-banner: #f9f9f9;
+
 $green: #63d1bb;
 $barkgreen: #56c3b2;
 
@@ -26,3 +28,26 @@ $primary-color: #63d1bb;
 $secondary-color: #56c3b2;
 
 $secondary-text-border-color: #444; /* gray */
+
+/* -------- TEXT COLOR HOVER --------- */
+
+$text-hover-color: #666;
+
+/* -------- TEXT COLOR ACTIVE --------- */
+
+$text-active-color: #b2b2b2;
+
+/* -------- ICON COLOR HOVER --------- */
+
+$icon-hover-color: #63d1bb;
+$icon-active-color: #d0f1ea;
+
+$logo-footer-hover-color: #46c1ae;
+$logo-footer-active-color: #bde2dd;
+
+$text-footer-active: #a8a8a8;
+
+/* -------- LOGO COLOR HOVER --------- */
+
+$logo-hover-color: #666;
+$logo-active-color: #b2b2b2;

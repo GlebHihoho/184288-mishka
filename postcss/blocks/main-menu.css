@@ -20,6 +20,28 @@
 }
 
 /* ------------------------------------ */
+/* ---------- HOVER / ACTIVE ---------- */
+/* ------------------------------------ */
+
+.main-menu__img-search:hover,
+.main-menu__img-card:hover {
+  fill: $icon-hover-color;
+}
+
+.main-menu__img-search:active,
+.main-menu__img-card:active {
+  fill: $icon-active-color;
+}
+
+.main-menu__list-item:hover {
+  color: $text-hover-color;
+}
+
+.main-menu__list-item:active {
+  color: $text-active-color;
+}
+
+/* ------------------------------------ */
 /* ----------    СПИСОК      ---------- */
 /* ------------------------------------ */
 
@@ -35,7 +57,7 @@
 
   @media (--desktop-widths) {
     align-items: center;
-    height: 80px;
+    height: 88px;
   }
 }
 
@@ -106,8 +128,8 @@
 
   @media (--desktop-widths) {
     padding-right: 35px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 33px;
     border-right: 1px solid $border-color;
   }
 
@@ -138,8 +160,8 @@
 .main-menu__finish-list .main-menu__list-item:nth-child(1) {
 
   @media (--tablet-widths) {
-    width: 80px;
-    height: 80px;
+    width: 82px;
+    height: 88px;
 
     border-right: 1px solid $border-color;
     border-left: 1px solid $border-color;

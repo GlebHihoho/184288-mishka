@@ -7,14 +7,14 @@
     display: flex;
     justify-content: center;
 
-    margin-top: -118px;
+    margin-top: -132px;
   }
 }
 
 .product-categories__category {
-  display: block;
-  position: relative;
-  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   padding-top: 30px;
   padding-bottom: 30px;
@@ -25,19 +25,12 @@
   line-height: 25px;
 
   @media (--tablet-widths) {
-    z-index: 1;
-
     padding-top: 35px;
     padding-bottom: 35px;
     padding-left: 35px;
-    padding-right: 150px;
 
     font-size: 20px;
     line-height: 25px;
-  }
-
-  @media (--desktop-widths) {
-    padding-right: 340px;
   }
 }
 
@@ -49,41 +42,45 @@
   background-color: $secondary-color;
 }
 
+.product-categories__icon--interior {
+  fill: #3bb09d;
+  margin-right: 35px;
+}
+
+.product-categories__icon--interior:hover  {
+  fill: #29a492;
+}
+
+.product-categories__icon--interior:active  {
+  fill: #44c0aa;
+}
+
+.product-categories__icon--toy {
+  fill: #35a999;
+  margin-right: 25px;
+}
+
+.product-categories__icon--toy:hover {
+  fill: #239f8e;
+}
+
+.product-categories__icon--toy:active {
+  fill: #37b2a0;
+}
+
 /* ---------------------------------------------------------- */
 /* --------------------- Блок текста ------------------------ */
 /* ---------------------------------------------------------- */
 
 .product-categories__text {
   display: block;
-  width: 150px;
-}
+  width: 110px;
 
-/* ---------------------------------------------------------- */
-/* ----------------------- Картинки ------------------------- */
-/* ---------------------------------------------------------- */
+  @media (--tablet-widths) {
+    margin-right: 110px;
+  }
 
-.product-categories__category--objects::before {
-  content: '';
-  position: absolute;
-  top: 20%;
-  right: 10%;
-
-  width: 41px;
-  height: 62px;
-
-  background-image: url(../img/icon-interior.svg);
-  background-repeat: no-repeat;
-}
-
-.product-categories__category--toy::before {
-  content: '';
-  position: absolute;
-  top: 20%;
-  right: 8%;
-
-  width: 61px;
-  height: 61px;
-
-  background-image: url(../img/icon-toy.svg);
-  background-repeat: no-repeat;
+  @media (--desktop-widths) {
+    margin-right: 300px;
+  }
 }

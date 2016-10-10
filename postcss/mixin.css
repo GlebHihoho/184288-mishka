@@ -34,3 +34,6 @@
 @custom-media --tablet-widths (min-width: 768px);
 @custom-media --desktop-widths (min-width: 1200px);
 
+/* ------------------- RETINA ------------------- */
+
+@custom-media --retina (min-resolution: 144dpi), (min-resolution: 1.5dppx);
