@@ -102,6 +102,7 @@
   @media (--tablet-widths) {
     width: 260px;
 
+    margin-top: 0;
     margin-left: 50px;
     margin-bottom: 45px;
   }
@@ -180,8 +181,12 @@
 .top-week__footer {
   margin-bottom: 35px;
 
+  @media (--tablet-widths) {
+    margin-bottom: 55px;
+  }
+
   @media (--desktop-widths) {
-    /*margin-top: 50px;*/
+    margin-bottom: 75px;
   }
 }
 
@@ -239,4 +244,13 @@
   @media (--desktop-widths) {
     margin-left: 255px;
   }
+}
+
+.top-week__btn:hover {
+  background-color: $btn-bg-hover;
+  color: white;
+}
+
+.top-week__btn:active {
+  color: $btn-text-active;
 }

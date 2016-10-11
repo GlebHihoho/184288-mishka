@@ -1,9 +1,14 @@
 .reviews {
   @mixin container;
 
-  padding-bottom: 45px;
-
   @media (--tablet-widths) {
+    display: flex;
+
+    padding-top: 85px;
+    padding-bottom: 35px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+
     background-image: url(../img/review@1x.jpg);
     background-repeat: no-repeat;
     background-size: 350px 457px;
@@ -14,7 +19,51 @@
   }
 
   @media (--desktop-widths) {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    margin-top: 60px;
     background-position: 50px 0;
+  }
+}
+
+.reviews {
+  @media (--tablet-widths) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* --------------  Порядок блоков  ---------------- */
+
+.reviews__header {
+  @media (--tablet-widths) {
+    order: 1;
+  }
+}
+
+.reviews__description {
+  @media (--tablet-widths) {
+    order: 3;
+  }
+}
+
+.reviews__name-container {
+  @media (--tablet-widths) {
+    order: 4;
+  }
+}
+
+.reviews__switch {
+  @media (--tablet-widths) {
+    order: 5;
+  }
+}
+
+.reviews__btn {
+  @media (--tablet-widths) {
+    order: 2;
   }
 }
 
@@ -25,15 +74,15 @@
 .reviews__header {
   @mixin margin-reset;
   margin-left: 30px;
-  margin-bottom: 38px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 
   font-size: 25px;
   line-height: 30px;
 
   @media (--tablet-widths) {
+    margin: 0;
     margin-left: 50px;
-    margin-top: 85px;
-    margin-bottom: 65px;
 
     font-size: 43px;
     line-height: 50px;
@@ -62,9 +111,12 @@
   line-height: 30px;
 
   @media (--tablet-widths) {
+    margin-top: 65px;
     margin-left: 50px;
     margin-right: 70px;
     margin-bottom: 70px;
+
+    line-height: 27px;
   }
 
   @media (--desktop-widths) {
@@ -78,35 +130,13 @@
 /* ------------- ИМЯ Комента ------------- */
 /* --------------------------------------- */
 
-.reviews__name {
-  @mixin margin-reset;
-  margin-left: 30px;
-
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  text-decoration: none;
-
-  @media (--tablet-widths) {
-    margin-left: 50px;
-  }
-
-  @media (--desktop-widths) {
-    margin-left: 255px;
-  }
-}
-
-/* --------------------------------------- */
-/* --------------   ПОчта   -------------- */
-/* --------------------------------------- */
-
-.reviews__mail {
-  @mixin margin-reset;
+.reviews__name-container {
   margin-left: 30px;
   margin-bottom: 35px;
 
   @media (--tablet-widths) {
     margin-left: 50px;
+    margin-bottom: 0;
   }
 
   @media (--desktop-widths) {
@@ -114,14 +144,26 @@
   }
 }
 
+.reviews__name {
+  @mixin margin-reset;
+  display: block;
+  margin-bottom: 5px;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
 
 /* --------------------------------------- */
 /* --------------   Кнопка   ------------- */
 /* --------------------------------------- */
 
 .reviews__btn {
+  display: block;
   margin-left: 30px;
   margin-right: 30px;
+  margin-bottom: 45px;
 
   padding-left: 80px;
   padding-right: 80px;
@@ -137,15 +179,26 @@
   text-decoration: none;
 
   @media (--tablet-widths) {
-    float: right;
-    margin-top: -395px;
-    margin-left: 300px;
+    margin: 0;
+    margin-right: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media (--desktop-widths) {
-    margin-top: -350px;
-    margin-left: 600px;
+
   }
+}
+
+.reviews__btn:hover {
+  background-color: $btn-bg-hover;
+  color: white;
+}
+
+.reviews__btn:active {
+  color: $btn-text-active;
 }
 
 /* --------------------------------------- */
@@ -165,9 +218,23 @@
 
   @media (--tablet-widths) {
     border: none;
-    float: right;
-    margin-top: -90px;
+    margin-bottom: 0;
   }
+}
+
+.reviews__switch-btn {
+  background-color: white;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.reviews__switch-btn:hover {
+  fill: $btn-arrow-hover;
+}
+
+.reviews__switch-btn:active {
+  fill: $btn-arrow-active;
 }
 
 .reviews__switch-prev {
@@ -193,4 +260,8 @@
 
   font-size: 0px;
   line-height: 0px;
+
+  @media (--tablet-widths) {
+    margin-left: 0;
+  }
 }

@@ -6,8 +6,6 @@
   @media (--tablet-widths) {
     display: flex;
     justify-content: center;
-
-    margin-top: -132px;
   }
 }
 
@@ -34,38 +32,50 @@
   }
 }
 
-.product-categories__category--objects {
-  background-color: $primary-color;
-}
-
-.product-categories__category--toy {
-  background-color: $secondary-color;
-}
-
 .product-categories__icon--interior {
-  fill: #3bb09d;
-  margin-right: 35px;
-}
-
-.product-categories__icon--interior:hover  {
-  fill: #29a492;
-}
-
-.product-categories__icon--interior:active  {
-  fill: #44c0aa;
+  margin-right: 36px;
 }
 
 .product-categories__icon--toy {
-  fill: #35a999;
-  margin-right: 25px;
+  margin-right: 26px;
 }
 
-.product-categories__icon--toy:hover {
-  fill: #239f8e;
+/* ---------------------------------------------------------- */
+/* ------------------- HOVER / ACTIVE ----------------------- */
+/* ---------------------------------------------------------- */
+
+/* ------------------- Первая  кнопка ----------------------- */
+
+.product-categories__category--objects {
+  background-color: $first-btn;
+  fill: $first-btn-icon;
 }
 
-.product-categories__icon--toy:active {
-  fill: #37b2a0;
+.product-categories__category--objects:hover {
+  background-color: $first-btn-hover;
+  fill: $first-btn-icon-hover;
+}
+
+.product-categories__category--objects:active {
+  color: $first-btn-text-active;
+  fill: $first-btn-icon-active;
+}
+
+/* ------------------- Вторая  кнопка ----------------------- */
+
+.product-categories__category--toy {
+  background-color: $second-btn;
+  fill: $second-btn-icon;
+}
+
+.product-categories__category--toy:hover {
+  background-color: $second-btn-hover;
+  fill: $second-btn-icon-hover;
+}
+
+.product-categories__category--toy:active {
+  color: $second-btn-text-active;
+  fill: $second-btn-icon-active;
 }
 
 /* ---------------------------------------------------------- */

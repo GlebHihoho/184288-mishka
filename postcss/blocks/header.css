@@ -1,61 +1,111 @@
 .header {
   @mixin container;
-
   position: relative;
   border-bottom: 1px solid $border-color;
-}
-
-.header__logo-img {
-  display: block;
-  width: 86px;
-  height: 35px;
-
-  @mixin margin-alignment;
-
-  padding-top: 22px;
-  padding-bottom: 22px;
 
   @media (--tablet-widths) {
-    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 
-    width: 113px;
-    height: 46px;
-    padding-top: 22px;
-    padding-bottom: 20px;
+.header__menu-first-block {
+  @media (--tablet-widths) {
+    order: 3;
   }
 
   @media (--desktop-widths) {
-    @mixin margin-alignment;
-    width: 149px;
-    height: 72px;
-    padding-top: 9px;
-    padding-bottom: 7px;
+    order: 1;
   }
-
 }
 
-.header__main-menu-btn {
-  border: none;
-  background: none;
+.header__menu-second-block {
+  @media (--tablet-widths) {
+    order: 2;
+  }
 
-  float: right;
-  margin-top: -48px;
+  @media (--desktop-widths) {
+    order: 3;
+  }
+}
+
+/* ---------------------------------------- */
+/* ------------ LOGO CONTAINER ------------ */
+/* ---------------------------------------- */
+
+.header__logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (--tablet-widths) {
+    order: 1;
+  }
+
+  @media (--desktop-widths) {
+    justify-content: center;
+    order: 2;
+  }
+}
+
+/* ------------ LOGO IMG ------------ */
+
+.header__logo-img {
+  width: 86px;
+  height: 35px;
+
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 115px;
+
+  @media (--tablet-widths) {
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (--desktop-widths) {
+    width: 149px;
+    height: 72px;
+
+    margin: 0;
+    margin-top: 9px;
+    margin-bottom: 7px;
+  }
+}
+
+.header__logo-img:hover {
+  fill: $logo-hover-color;
+}
+
+.header__logo-img:active {
+  fill: $logo-active-color;
+}
+
+/* ------------ HEADER BTN ------------ */
+
+.header__main-menu-btn {
   margin-right: 30px;
 
-  padding: 0;
+  border: none;
+  background-color: white;
 
   @media (--tablet-widths) {
     display: none;
   }
-
 }
 
-/* ------------------------- */
+/* ---------------------------------------- */
+/* --------------- JS CLASS --------------- */
+/* ---------------------------------------- */
 
 .open-close-js {
   display: none;
 }
-
 
 /* ---------------------------------------- */
 /* --------------- SVG LOGO --------------- */
@@ -87,19 +137,190 @@
   }
 }
 
-/* ---------------------------------------- */
-/* --------------- SVG LOGO --------------- */
-/* ------------ Hover / Active ------------ */
-/* ---------------------------------------- */
+.header__menu-container {
+  display: flex;
+  flex-direction: column;
 
-.header__logo-img {
+  font-weight: 700;
 
+  @media (--tablet-widths) {
+    flex-direction: row;
+  }
 }
 
-.header__logo-img:hover {
-  fill: $logo-hover-color;
+/* ------------------------------------ */
+/* ----------    СПИСОК      ---------- */
+/* ------------------------------------ */
+
+.header__menu {
+  width: 320px;
+  position: absolute;
+  background-color: white;
+
+  @media (--tablet-widths) {
+    position: relative;
+    width: auto;
+  }
 }
 
-.header__logo-img:active {
-  fill: $logo-active-color;
+.header__menu-second-block {
+  top: 245px;
+  left: 0;
+
+  @media (--tablet-widths) {
+    top: 0;
+  }
+}
+
+.header__menu-link {
+  position: relative;
+
+  padding-left: 75px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-top: 1px solid $border-color;
+
+  @media (--tablet-widths) {
+    padding-left: 50px;
+    border: none;
+  }
+}
+
+.header__menu-img {
+  position: absolute;
+  top: 35%;
+  left: 9%;
+}
+
+/* ---------- HOVER / ACTIVE ---------- */
+
+.header__menu-link {
+  fill:#d3d2d2;
+}
+
+.header__menu-link:hover {
+  color: $text-hover-color;
+  fill: $icon-hover-color;
+}
+
+.header__menu-link:active {
+  color: $text-active-color;
+  fill: $icon-active-color;
+}
+
+/* ------------------------------------ */
+/* ----------    Стили       ---------- */
+/* ------------------------------------ */
+
+.header__menu {
+  /*border: 2px solid red;*/
+}
+
+/* ------------------------------------ */
+/* ----------  Первый блок   ---------- */
+/* ------------------------------------ */
+
+.header__menu-first-block {
+  @media (--tablet-widths) {
+    position: absolute;
+    top: 88px;
+    left: 0;
+
+    background-color: inherit;
+
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  @media (--desktop-widths) {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+.header__menu-first-block .header__menu-link {
+  @media (--tablet-widths) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media (--desktop-widths) {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+}
+
+.header__first-link {
+  @media (--desktop-widths) {
+    padding-right: 35px;
+    border-right: 1px solid $border-color;
+  }
+}
+
+.header__second-link {
+  @media (--desktop-widths) {
+    padding-left: 35px;
+  }
+}
+
+/* ------------------------------------ */
+/* ----------  Меню поиска   ---------- */
+/* ------------------------------------ */
+
+.header__menu-search {
+  @media (--tablet-widths) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @mixin margin-reset;
+    width: 82px;
+    height: 88px;
+
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+
+    font-size: 0;
+    line-height: 0;
+  }
+}
+
+.header__menu-search .header__menu-img {
+  @media (--tablet-widths) {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* ------------------------------------ */
+/* ----------  Меню корзины  ---------- */
+/* ------------------------------------ */
+
+.header__menu-cart {
+  @media (--tablet-widths) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    padding-right: 50px;
+  }
+}
+
+.header__menu-cart .header__menu-img {
+  @media (--tablet-widths) {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

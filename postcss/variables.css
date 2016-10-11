@@ -20,6 +20,49 @@ $text: #000000;
 $border-color: #ececec;
 $border-color-gray: #e5e5e5;
 
+
+/* --------- PRODUCT CATEGORIES BLOCK ---------- */
+
+$first-btn: #63d1bb;
+$first-btn-hover: #59d5bc;
+$first-btn-text-active: #8be1d0;
+
+$first-btn-icon: #3bb09d;
+$first-btn-icon-hover: #28a592;
+$first-btn-icon-active: #44bfaa;
+
+$second-btn: #56c3b2;
+$second-btn-hover: #46c1ae;
+$second-btn-text-active: #7dd3c6;
+
+$second-btn-icon: #35a999;
+$second-btn-icon-hover: #239f8e;
+$second-btn-icon-active: #36b1a0;
+
+/* --------------- TOP WEEK BLOCK -------------- */
+
+$btn-bg-hover: #444;
+$btn-text-active: #7c7c7c;
+
+/* ---------------- REVIEWS BLOCK -------------- */
+
+$btn-arrow-hover: #666;
+$btn-arrow-active: #b2b2b2;
+
+/* --------------- CONTACTS BLOCK -------------- */
+
+$adress-text: #444;
+$adress-text-hover: #46c1ae;
+$adress-text-active: #c7ece7;
+
+$adress-border: #62d1ba;
+$adress-border-hover: #46c1ae;
+$adress-border-active: #edf9f7;
+
+/* ----------------- CARD BLOCK ---------------- */
+
+
+
 /* --------------------------------------------- */
 /* ------------------- COLOR ------------------- */
 /* --------------------------------------------- */

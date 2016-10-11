@@ -1,0 +1,15 @@
+.zig-zag__img {
+  @mixin container;
+  display: block;
+  height: 7px;
+
+  @media (--tablet-widths) {
+    width: 760px;
+    height: 17px;
+  }
+
+  @media (--desktop-widths) {
+    width: 1150px;
+    height: 23px;
+  }
+}
