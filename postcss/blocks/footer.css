@@ -29,6 +29,14 @@
   }
 }
 
+.footer__logo-img:hover {
+  fill: $icon-hover-color;
+}
+
+.footer__logo-img:active {
+  fill: $icon-active-color;
+}
+
 /* -------------------------------------------- */
 /* ----------- Блок с соц.кнопками ------------ */
 /* -------------------------------------------- */
@@ -65,7 +73,7 @@
 }
 
 .footer__social-img:hover {
-  fill: $icon-hover-color
+  fill: $icon-hover-color;
 }
 
 .footer__social-img:active {

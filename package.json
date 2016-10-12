@@ -33,7 +33,8 @@
     "test": "editorconfig-cli",
     "build": "gulp build",
     "start": "gulp serve",
-    "sprite": "gulp symbols"
+    "sprite": "gulp symbols",
+    "deploy": "surge ./build 182488-mishka.surge.sh"
   },
   "editorconfig-cli": [
     "*.html",

@@ -207,4 +207,13 @@
   }
 }
 
+.video__btn:hover {
+  background-color: $btn-bg-hover;
+  color: white;
+}
+
+.video__btn:active {
+  color: $btn-text-active;
+}
+
 /* ------------------------- */
