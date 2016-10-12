@@ -49,7 +49,8 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("postcss/**/*.css", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["copy:html"]);
+  gulp.watch("build/*.html").on("change", server.reload);
 });
 
 gulp.task("images", function() {
@@ -96,4 +97,13 @@ gulp.task("build", function(fn) {
 
 gulp.task("clean", function() {
   return del("build");
+});
+
+gulp.task("copy:html", function() {
+  return gulp.src([
+    "*.html"
+  ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"));
 });

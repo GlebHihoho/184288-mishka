@@ -72,6 +72,27 @@
   }
 }
 
+.video__header-svg {
+  fill: $primary-color;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+
+  @media (--tablet-widths) {
+    top: 55%;
+    left: 12%;
+  }
+
+  @media (--desktop-widths) {
+    left: 805px;
+    top: 50px;
+  }
+}
+
+.video__head {
+  position: relative;
+}
+
 /* --------------------------------------- */
 /* ------------ Видео блок --------------- */
 /* --------------------------------------- */

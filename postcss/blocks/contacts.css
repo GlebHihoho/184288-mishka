@@ -181,10 +181,10 @@
   }
 
   @media (--desktop-widths) {
-    /*bottom: 500px;
-    left: 70%;*/
-    top: 0;
-    right: -200px;
+    position: relative;
+    float: right;
+    margin-right: 200px;
+    margin-top: -200px;
   }
 }
 
