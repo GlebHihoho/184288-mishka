@@ -1,16 +1,10 @@
 .banner {
   @mixin container;
 
-  background-position: 50% 25%;
+  background-position: 50% -10%;
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-
-      /*background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: cover contain;*/
-
   background-color: $bg-banner;
+  background-repeat: no-repeat;
 
   @media (--retina) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -104,7 +98,8 @@
 
   @media (--desktop-widths) {
     justify-content: flex-start;
-    padding-top: 25px
+    padding-top: 25px;
+    padding-right: 50px;
   }
 }
 
@@ -129,7 +124,7 @@
 .banner__link:nth-child(2) {
   @media (--desktop-widths) {
     margin-left: 35px;
-    margin-right: 530px;
+    margin-right: 510px;
   }
 }
 
@@ -141,5 +136,6 @@
 
   @media (--desktop-widths) {
     margin: 0;
+    /*margin-right: 50px;*/
   }
 }

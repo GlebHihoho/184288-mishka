@@ -14,12 +14,10 @@
 @import "blocks/header.css";
 @import "blocks/footer.css";
 
-@import "blocks/social.css";
 @import "blocks/zig-zag.css";
 
 /*  index.html  */
 
-@import "blocks/main-menu.css";
 @import "blocks/banner.css";
 @import "blocks/product-categories.css";
 @import "blocks/top-week.css";

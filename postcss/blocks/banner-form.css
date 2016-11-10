@@ -2,6 +2,7 @@
   @mixin container;
 
   background-color: $bg-grey;
+  background-image: none;
 }
 
 .banner-form__header {
@@ -42,4 +43,4 @@
 
 }
 
-/* ------------------------- */
+ /*------------------------- */
