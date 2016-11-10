@@ -293,6 +293,7 @@ input[type=checkbox]:checked + .form__checkbox-icon::after {
 
   @media (--tablet-widths) {
     display: inline-block;
+    vertical-align: center;
     padding-right: 25px;
   }
 
@@ -350,6 +351,7 @@ input[type=checkbox]:checked + .form__checkbox-icon::after {
 
   @media (--tablet-widths) {
     display: inline-block;
+    vertical-align: center;
   }
 
   @media (--desktop-widths) {
@@ -363,6 +365,7 @@ input[type=checkbox]:checked + .form__checkbox-icon::after {
 
   @media (--tablet-widths) {
     display: inline-block;
+    vertical-align: center;
     width: 490px;
 
     background: $bg-grey;
@@ -410,6 +413,7 @@ input[type=checkbox]:checked + .form__checkbox-icon::after {
 
   @media (--tablet-widths) {
     display: inline-block;
+    vertical-align: center;
   }
 
   @media (--desktop-widths) {

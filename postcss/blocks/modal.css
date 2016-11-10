@@ -23,7 +23,7 @@
 }
 
 .modal--open {
-  /*display: none;*/
+  display: none;
 }
 
 .modal__overlay {
